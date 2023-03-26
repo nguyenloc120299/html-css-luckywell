@@ -55,7 +55,10 @@ body {
     background: url("../images/rectangle1.png");
     background-repeat: no-repeat;
     background-position: center;
+    isolation: isolate;
     background-size: 100%;
+    background-blend-mode: overlay;
+    backdrop-filter: blur(30px);
 }
 .header_main {
     display: flex;
@@ -378,5 +381,11 @@ body {
     }
     .lucky-well {
         transform: scale(0.7);
+    }
+}
+@media (min-width: 678px) {
+    .main {
+        background-image: url("../images/bg-ipad-mini.png"),
+            radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%);
     }
 }
