@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/bg.png"),
+        radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.wrap-page {
+    max-width: 992px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------header------------------ */
+.header {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+    left: 50%;
+    width: 100%;
+    background: url("../images/rectangle1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.header_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 20px 16px 36px;
+}
+.header .coin {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 57px;
+    height: 23px;
+    position: relative;
+    background: url("../images/Variant3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.header .coin .box-coin {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px 4px 24px;
+    gap: 10px;
+    /* width: 57px;
+    height: 23px;
+    background: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 8px; */
+}
+.header .coin .box-coin .amount {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.coin-1 {
+    position: absolute;
+    width: 23.58px;
+    height: 23.5px;
+    top: -3px;
+    transform: rotate(36deg);
+    z-index: 2;
+}
+.coin-2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    transform: rotate(52.86deg);
+}
+.coin-1 img,
+.coin-2 img {
+    object-fit: cover;
+}
+.header_info {
+}
+.home {
+    width: 100%;
+    height: 100%;
+    /* background: url("../images/bg.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 112px;
+    height: 48px;
+}
+.header_info_avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 505;
+    background: url("../images/avatar.png");
+}
+.header_info_icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* ------------footer---------------- */
+.footer {
+    width: 100%;
+    height: 91px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("../images/bg_footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.footer_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 10px;
+    width: 100%;
+}
+.footer_main .btn_mission {
+    width: 104px;
+    height: 40px;
+    background: #200249;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.btn_mission_text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0px;
+}
+.footer_menu_text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+/* 
+--------------------event------------- */
+
+.event_main {
+    position: absolute;
+    left: 0;
+    top: 12%;
+    width: 100%;
+    height: 77px;
+}
+
+.event_left {
+    position: relative;
+    height: 46px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.event_time_text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+}
+.event_car_jackpot {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+}
+
+/* ------------LUCKYWELL--------------- */
+.game-main {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%); */
+}
+.lucky-well {
+    position: relative;
+    height: 375px;
+    max-width: 375px;
+    width: 100%;
+
+    /* background: url("../images/spin-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.spin-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.lucky-well-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 295px;
+    max-width: 295px;
+    width: 100%;
+}
+.lucky-well-spin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.spine-bot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -43px;
+}
+.spine-bot img {
+    width: 255px;
+    object-fit: cover;
+}
+.spine-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -135px;
+}
+.lucky-well-buy-turn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+    z-index: 10;
+}
+.number-lucky-well {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+.arow_lucky_well {
+    position: absolute;
+    top: -15px;
+    right: 20%;
+    z-index: 20;
+}
+.sns {
+    position: absolute;
+    left: 8px;
+    bottom: 120px;
+    width: 40px;
+    height: 152px;
+    background: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    background: url(../images/Variant2.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0;
+}
+.list-sns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+@media (max-width: 992px) {
+    .game-main {
+        transform: scale(0.8);
+    }
+    .lucky-well {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 375px) {
+    .lucky-well {
+        transform: scale(0.7);
+    }
+}

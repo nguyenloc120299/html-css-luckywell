@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%);
+    position: relative;
+}
+.home {
+    background: url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 768px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-loading {
+    width: 326px;
+    height: 101px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-center {
+    width: 280px;
+    height: 45px;
+}
+.text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Inter";
+    text-transform: capitalize;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.progress-bar {
+    max-width: 280px;
+    width: 100%;
+    height: 20px;
+    background: #200249;
+    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.progress-bar-active {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    border-radius: 30px;
+    animation: progress-forward 5s infinite;
+}
+
+/* -------------menumobile-------------- */
+
+@keyframes progress-forward {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 50%;
+    }
+    50% {
+        width: 75%;
+    }
+    75% {
+        width: 85%;
+    }
+    100% {
+        width: 100%;
+    }
+}
