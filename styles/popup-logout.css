@@ -1,0 +1,85 @@
+.popup-logout {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.25s, opacity 0.25s;
+}
+.popup-logout-content {
+    width: 100%;
+    height: 338.96px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-logout-content-main {
+    width: 223px;
+    height: 166px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+}
+.popup-logout .line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    display: flex;
+    margin: auto;
+    margin-bottom: 12px;
+}
+.close-popup {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    cursor: pointer;
+    z-index: 99;
+}
+.popup-logout .title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.popup-logout .text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #200249;
+    margin-bottom: 12px;
+}
+.popup-logout:target {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.25s;
+}

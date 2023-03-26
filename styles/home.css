@@ -296,6 +296,7 @@ body {
     height: 295px;
     max-width: 295px;
     width: 100%;
+    transition: 3.5s;
 }
 .lucky-well-spin img {
     width: 100%;
@@ -343,7 +344,7 @@ body {
     left: 8px;
     bottom: 120px;
     width: 40px;
-    height: 152px;
+    height: 130px;
     background: rgba(255, 255, 255, 0.3);
     background-blend-mode: overlay;
     border: 1px solid #ffffff;
@@ -371,7 +372,10 @@ body {
         transform: scale(0.8);
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 350px) {
+    .game-main {
+        transform: scale(0.7);
+    }
     .lucky-well {
         transform: scale(0.7);
     }
