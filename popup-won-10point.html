@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/popup-logout.css" rel="stylesheet">
+    <link href="./styles/popup-won.css" rel="stylesheet">
     <link href="./styles/home.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,11 +37,10 @@
                     </div>
                     <div class="header_info">
                         <div class="header_info_avatar"></div>
-                        <a href="#popup-logout">
-                            <img src="./images/signout.svg" class="header_info_icon" />
+                        <img src="./images/signout.svg" class="header_info_icon" />
+                        <a href="#logout">
+                            <img src="./images/seting.svg" class="header_info_icon" />
                         </a>
-                        <img src="./images/seting.svg" class="header_info_icon" />
-
                     </div>
                 </div>
 
@@ -145,28 +144,28 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- -------------------popup-logout---------------------- -->
-            <div class="popup-logout" id="popup-logout">
-                <div class="popup-logout-content">
-                    <div class="popup-logout-content-main">
-                        <div>
-                            <a href="#" class="close-popup">
-                                <img src="./images/X.png" />
-                            </a>
-                            <div class="title">Log out</div>
-                            <div class="line"></div>
-                            <div class="text">
-                                Are you sure want to log out of
-                                the Lucky Draw service?
-                            </div>
-                            <div class="flex justify-center" style="gap:12px">
-                                <img src="./images/no-btn.svg" />
-                                <img src="./images/yes-btn.svg" />
-                            </div>
-                        </div>
-                    </div>
+    <!-- --------------popup won 10 coin--------------------->
 
+    <div class="popup-reward ">
+        <div class="popup-reward-content">
+            <div class="popup-reward-content-main">
+                <a href="./home.html" class="close-popup">
+                    <img src="./images/X.png" />
+                </a>
+
+                <div>
+                    <img src="./images/congratulation.png" />
+                </div>
+                <div class="line"></div>
+                <div class="content-text">You won <span style="margin: 0 3px;"> 10 </span>Point</div>
+                <div class="spin-popup">
+                    <img src="./images/10_coin.png" />
+                </div>
+                <div class="btn-collect">
+                    <div>Collect</div>
                 </div>
             </div>
         </div>
