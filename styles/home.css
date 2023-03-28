@@ -190,6 +190,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
 }
 .btn_mission_text {
     font-family: "Montserrat";
