@@ -1,0 +1,51 @@
+.popup-bigwin {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.popup-bigwin-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/ng-popupwin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.popup-bigwin-content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 12px;
+    isolation: isolate;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+.close-popup {
+    position: absolute;
+    right: -15px;
+    top: -25px;
+    cursor: pointer;
+    z-index: 99;
+}
+.main_content_reward {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}

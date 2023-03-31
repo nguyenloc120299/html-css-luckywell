@@ -1,27 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.flex-column {
-    flex-direction: column;
-}
-.flex {
-    display: flex;
-}
-.justify-between {
-    justify-content: space-between;
-}
-.justify-center {
-    justify-content: center;
-}
-.w-full {
-    width: 100%;
-}
-.h-full {
-    height: 100%;
-}
-
+@import url("./global.css");
 .main {
     height: 100vh;
     width: 100vw;
@@ -95,7 +72,7 @@ body {
     border-radius: 8px; */
 }
 .header .coin .box-coin .amount {
-    font-family: "Inter";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -165,7 +142,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: url("../images/bg_footer.png");
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,7 +188,7 @@ body {
     padding: 12px 0px;
 }
 .footer_menu_text {
-    font-family: "Inter";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -244,7 +221,7 @@ body {
     align-items: start;
 }
 .event_time_text {
-    font-family: "Inter";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -370,18 +347,18 @@ body {
 }
 @media (max-width: 992px) {
     .game-main {
-        transform: scale(0.8);
+        transform: scale(1);
     }
     .lucky-well {
-        transform: scale(0.8);
+        transform: scale(1);
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 430px) {
     .game-main {
-        transform: scale(0.7);
+        transform: scale(0.9);
     }
     .lucky-well {
-        transform: scale(0.7);
+        transform: scale(0.9);
     }
 }
 @media (min-width: 678px) {

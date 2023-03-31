@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/popup-won.css" rel="stylesheet">
+    <link href="./styles/popup-buy_turn.css" rel="stylesheet">
     <link href="./styles/home.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,29 +147,98 @@
         </div>
     </div>
 
-    <!-- --------------popup won 500 coin--------------------->
+    <!-- --------------popup buy turn--------------------->
 
-    <div class="popup-reward ">
-        <div class="popup-reward-content">
-            <div class="popup-reward-content-main">
+    <div class="popup-buy_turn" id="buy-turn">
+        <div class="popup-buy_turn-content">
+            <div class="popup-buy_turn-content-main">
                 <a href="./home.html" class="close-popup">
                     <img src="./images/X.png" />
                 </a>
 
                 <div>
-                    <img src="./images/congratulation.png" />
+                    <img src="./images/buy_turn_title.png" />
                 </div>
                 <div class="line"></div>
-                <div class="content-text">You won <span style="margin: 0 3px;"> 500 </span>Point</div>
-                <div class="spin-popup">
-                    <img src="./images/500-coin.svg" />
+                <div class="content-text">Please choose quantity</div>
+                <div class="form_control_amout">
+                    <div class="btn_reduce">
+                        -
+                    </div>
+                    <div class="amount">1</div>
+                    <div class="btn_increase">+</div>
                 </div>
-                <div class="btn-collect">
-                    <div>Collect</div>
+                <div class="flex justify-between items-center w-full text-total-price">
+                    <span>Total Price:</span>
+                    <span style="font-weight: 700;">100MMK</span>
                 </div>
+                <a href="#buy_turn_confirm" class="btn-buy">
+                    <div>Buy</div>
+                </a>
             </div>
         </div>
     </div>
+
+    <!-- ---------------------------popup confirm---------------- -->
+
+    <div class="popup-buy_turn_confirm" id="buy_turn_confirm">
+        <div class="popup-buy_turn-content">
+            <div class="popup-buy_turn-content-main">
+                <a href="./home.html" class="close-popup">
+                    <img src="./images/X.png" />
+                </a>
+
+                <div>
+                    <img src="./images/buy_turn_title.png" />
+                </div>
+                <div class="line"></div>
+                <div class="content-text">Please choose quantity</div>
+                <div class="enter-pincode">
+                    <div class="number-pin">
+                        1
+                    </div>
+                    <div class="number-pin">
+                        2
+                    </div>
+                    <div class="number-pin">
+                        3
+                    </div>
+                    <div class="number-pin">
+                        4
+                    </div>
+                    <div class="number-pin">
+                        5
+                    </div>
+                    <div class="number-pin">
+                        6
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="wrong_opt">
+                        <img src="./images/wrong_icon.svg" />
+                        Wrong OPT
+                    </div>
+
+                </div>
+                <div class="text-receive">
+                    Didn’t receive any OTP code?
+                </div>
+                <div class="text-resend">
+                    Re-send OTP code
+                </div>
+                <div class="flex w-full justify-between">
+                    <div class="btn-back">
+                        <div>Back</div>
+                    </div>
+                    <div class="btn-confirm">
+                        <div>Confirm</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="./js/home.js"></script>
 </body>
 

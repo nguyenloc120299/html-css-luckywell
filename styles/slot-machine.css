@@ -1,0 +1,511 @@
+@import url("./global.css");
+.items-center {
+    align-items: center;
+}
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/slot-machine-bg.png"),
+        radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrap-page {
+    max-width: 992px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------header------------------ */
+.header {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+    left: 50%;
+    width: 100%;
+    background: url("../images/rectangle1.png");
+    background-repeat: no-repeat;
+    background-position: center -16px;
+    isolation: isolate;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    backdrop-filter: blur(30px);
+}
+.header_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 20px 16px 36px;
+}
+.header .coin {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 57px;
+    height: 23px;
+    position: relative;
+    background: url("../images/Variant3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.header .coin .box-coin {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px 4px 24px;
+    gap: 10px;
+    /* width: 57px;
+    height: 23px;
+    background: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 8px; */
+}
+.header .coin .box-coin .amount {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.coin-1 {
+    position: absolute;
+    width: 23.58px;
+    height: 23.5px;
+    top: -3px;
+    transform: rotate(36deg);
+    z-index: 2;
+}
+.coin-2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    transform: rotate(52.86deg);
+}
+.coin-1 img,
+.coin-2 img {
+    object-fit: cover;
+}
+.header_info {
+}
+.home {
+    width: 100%;
+    height: 100%;
+    /* background: url("../images/bg.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 112px;
+    height: 48px;
+}
+.header_info_avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 505;
+    background: url("../images/avatar.png");
+}
+.header_info_icon {
+    width: 24px;
+    height: 24px;
+}
+.img__title {
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------jackport--------------------- */
+.main-slot-machine {
+    width: 90%;
+    margin-top: 100px;
+}
+.list-btn-jackport {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.buy_ticket_jackport {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: 131px;
+    height: 35px;
+    background: #fbac34;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #200249;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn_rule {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: 83px;
+    height: 35px;
+    background: linear-gradient(36.65deg, #ffdbac 36.47%, #ffddae 38.48%, #fff1ca 63.7%, #fffcd5 78.71%);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #340b32;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.jackport_package {
+    margin-top: 15px;
+}
+.jaclport_package_frame {
+    max-width: 398px;
+    width: 100%;
+    height: 189px;
+    background: url("../images/frame-bg.png");
+    backdrop-filter: blur(2px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.total_reward_jackport {
+    position: absolute;
+    right: 5px;
+    bottom: 16px;
+}
+.total_reward_jackport .gold {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: capitalize;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.total_reward_jackport .silver {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, #d8d8d8 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.total_reward_jackport .bronze {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    background: linear-gradient(180deg, #fbdbbc 0%, #b86819 100%);
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.jaclport_package_frame .package_img {
+    width: 100px;
+    height: 145px;
+}
+.jaclport_package_frame .package_img2 {
+    width: 125px;
+}
+.time_left_package {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+.time_left_package_live {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+.time_left_package_live span {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.total_reward_jackport_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+    max-width: 160px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.text-gold {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(311.52deg, #fdc16e 29.15%, #ffd862 45.2%, #ffea54 61.27%, #fff34d 70.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.text-silver {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    background: linear-gradient(268.34deg, #ffffff -14.46%, #a7a7a7 100.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.text-bronze {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(268.34deg, #c17528 -14.46%, #cb9e70 100.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.text-amount {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+/* ------------poup rule---------------- */
+
+.popup-rule {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.25s, opacity 0.25s;
+}
+.popup-rule-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-rule-content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 12px;
+    isolation: isolate;
+    max-width: 384px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+.close-popup {
+    position: absolute;
+    right: -15px;
+    top: -25px;
+    cursor: pointer;
+    z-index: 99;
+}
+.box-content-rule {
+    max-height: 500px;
+    height: 100%;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 8px;
+    border-radius: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #200249;
+}
+.popup-rule:target {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.25s;
+}
+.point__win {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.point__win span {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, #bc4409 15.91%, #e5fe62 40.41%, #ebc939 64.93%, #f9b018 79.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn__win {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 48px;
+    gap: 10px;
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+@media (max-width: 430px) {
+    .total_reward_jackport_detail {
+        max-width: 120px;
+    }
+    .text-gold {
+        font-size: 16px;
+    }
+    .total_reward_jackport div {
+        font-size: 30px;
+    }
+    .popup-rule-content-main {
+        max-width: 300px;
+    }
+}
+@media (min-width: 540px) {
+    .jaclport_package_frame {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+}
