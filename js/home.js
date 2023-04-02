@@ -7,14 +7,16 @@ let gift_shop = document.getElementById("gift_shop")
 let mission = document.getElementById("mission")
 let history = document.getElementById("history")
 let guide = document.getElementById("guide")
-btn.onclick = function () {
-    spiner.style.transform = "translate(-50%, -50%) rotate(" + number * 5 + "deg)";
-    number = Math.ceil(Math.random() * 1000);
-}
+if (btn)
+    btn.onclick = function () {
+        spiner.style.transform = "translate(-50%, -50%) rotate(" + number * 5 + "deg)";
+        number = Math.ceil(Math.random() * 1000);
+    }
 footer.style.background = "url(../images/bg_footer.png)"
-
+footer.style.backgroundRepeat = "no-repeat"
 mission.onclick = function () {
     return footer.style.background = "url(../images/mission_f.png)"
+
 }
 inbox.onclick = function () {
     return footer.style.background = "url(../images/inbox_footer.png)"
@@ -27,5 +29,6 @@ history.onclick = function () {
     return footer.style.background = "url(../images/history_f.png)"
 }
 guide.onclick = function () {
-    return footer.style.background = "url(../images/guide_f.png)"
+    footer.style.background = "url(../images/guide_f.png)"
+
 }
