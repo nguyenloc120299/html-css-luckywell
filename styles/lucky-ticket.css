@@ -145,12 +145,12 @@
 /* --------------ticket lucky--------------------- */
 .main-ticketlucky-content {
     width: 100%;
-    margin-top: 120px;
+    margin-top: 275px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 .main-ticketlucky-content-box {
     position: relative;
@@ -348,12 +348,15 @@
 }
 .list-ticket-image {
     position: absolute;
-    top: -70px;
+    top: -80px;
     z-index: 1;
 }
 .scroll-ticket-lucky {
     height: 100vh;
     overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .scroll-ticket-lucky::-webkit-scrollbar {
     display: none;
