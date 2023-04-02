@@ -5,12 +5,13 @@ body {
 }
 .main {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     background: radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%);
     position: relative;
     overflow: hidden;
+    margin: 0px;
 }
 .wrap-page {
     max-width: 992px;
@@ -112,20 +113,21 @@ body {
     justify-content:center;
 }
 .giftshop-picture {
+    margin-top: 90px;
     width: 70%;
-    height: 155px;
+    height: 121px;
     display: flex;
     justify-content:center;
 }
 .giftshop-picture img {
-    width: 250px;
-    height: 130px;
+    width: 240px;
+    height: 120px;
     position: absolute;
     z-index: 1;
 }
 .title-gift-shop {
     position: absolute;
-    margin-top: 100px;
+    margin-top: 75px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -133,21 +135,19 @@ body {
     padding: 4px 36px;
     gap: 10px;
     z-index: 2;
-    width: 190px;
-    height: 45px;
+    width: 170px;
+    height: 38px;
     background: linear-gradient(271.3deg, rgba(32, 2, 73, 0.8) 5.94%, rgba(144, 21, 118, 0.8) 88.84%);
     border-radius: 20px 20px 0px 0px;
 }
 .title-gift-shop-text {
-    width: 229px;
     height: 49px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 800;
-    font-size: 35px;
+    font-weight: 990;
+    font-size: 30px;
     line-height: 49px;
     display: flex;
-    align-items: center;
     text-align: center;
     text-transform: uppercase;
     background: linear-gradient(20.68deg, #6D68AF -114.33%, #EE4599 -7.6%, #F5A2C6 80.08%);
@@ -157,26 +157,26 @@ body {
 }
 .banner {
     width: 100%;
-    height: 70px;
+    height: 150px;
 }
 .banner img{
     width: 100%;
-    height: 100px;
+    height: 100%;
 }
 li {
     list-style-type: none;
 }
 .menu {
     width: 100%;
+    height: 60px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .menu-group {
     width: 314px;
-    height: 51px;
+    height: 100%;
 }
 .menu-list {
     display: flex;
@@ -208,12 +208,16 @@ li {
 .card-list {
     width: 100%;
     height: 340px;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+}
+.card-list-line {
     padding-left: 5%;
     padding-right: 5%;
-    overflow: scroll;
 }
 .card {
-    width: 95%;
+    width: 100%;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -390,20 +394,14 @@ li {
     text-transform: capitalize;
     color: #ffffff;
 }
-
-@media (max-width: 992px) {
+@media (min-width: 690px) {
     .game-main {
-        transform: scale(0.8);
-    }
-    .lucky-well {
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 690px) {
     .game-main {
-        transform: scale(0.7);
-    }
-    .lucky-well {
-        transform: scale(0.7);
+        width: 100%;
+        height:auto;
     }
 }
