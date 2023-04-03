@@ -7,28 +7,33 @@ let gift_shop = document.getElementById("gift_shop")
 let mission = document.getElementById("mission")
 let history = document.getElementById("history")
 let guide = document.getElementById("guide")
+let img1 = "url(../images/mission_f.png)"
+let img2 = "url(../images/inbox_footer.png)"
+let img3 = "url(../images/giftshop_f.png)"
+let img4 = "url(../images/history_f.png)"
+let img5 = "url(../images/guide_f.png)"
 if (btn)
     btn.onclick = function () {
         spiner.style.transform = "translate(-50%, -50%) rotate(" + number * 5 + "deg)";
         number = Math.ceil(Math.random() * 1000);
     }
 footer.style.background = "url(../images/bg_footer.png)"
-footer.style.backgroundRepeat = "no-repeat"
+
 mission.onclick = function () {
-    return footer.style.background = "url(../images/mission_f.png)"
+    return footer.style.background = img1
 
 }
 inbox.onclick = function () {
-    return footer.style.background = "url(../images/inbox_footer.png)"
+    return footer.style.background = img2
 }
 gift_shop.onclick = function () {
-    return footer.style.background = "url(../images/giftshop_f.png)"
+    return footer.style.background = img3
 }
 
 history.onclick = function () {
-    return footer.style.background = "url(../images/history_f.png)"
+    return footer.style.background = img4
 }
 guide.onclick = function () {
-    footer.style.background = "url(../images/guide_f.png)"
+    return footer.style.background = img5
 
 }

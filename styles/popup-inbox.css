@@ -178,6 +178,7 @@
     align-items: center;
     color: #ffffff;
 }
+
 @media (max-width: 992px) {
     .game-main {
         transform: scale(0.8);

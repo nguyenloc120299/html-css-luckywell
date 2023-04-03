@@ -149,6 +149,7 @@
     background-size: 100% !important;
     display: flex;
     align-items: center;
+    transition: 0.4s ease-in-out;
 }
 .footer_main {
     display: flex;
