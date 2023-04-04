@@ -3,7 +3,7 @@
     align-items: center;
 }
 .main {
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -45,6 +45,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+
     padding: 8px 20px 16px 36px;
 }
 .header .coin {
@@ -139,12 +140,35 @@
 .img__title {
     display: flex;
     justify-content: center;
+    position: relative;
 }
-
+.effect-title {
+    position: absolute;
+    top: -108px;
+    left: 50%;
+    transform: translate(-50%);
+    mix-blend-mode: screen;
+}
+.text-bigwin {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
 /* --------------jackport--------------------- */
 .main-slot-machine {
     width: 90%;
-    margin-top: 100px;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-top: 150px;
+}
+.main-slot-machine::-webkit-scrollbar {
+    display: none;
 }
 .list-btn-jackport {
     display: flex;
@@ -198,6 +222,31 @@
     text-align: center;
     text-transform: capitalize;
     color: #340b32;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.btn__honoring {
+    width: 128px;
+    height: 36px;
+    background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
 }
@@ -464,14 +513,14 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn__win {
+    margin-right: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 48px;
     gap: 10px;
-    width: 120px;
-    height: 35px;
+    width: 128px;
+    height: 36px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     border: 1px solid #ffffff;
     backdrop-filter: blur(30px);

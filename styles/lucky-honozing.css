@@ -39,6 +39,7 @@
     background-size: 100%;
     background-blend-mode: overlay;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 .header_main {
     display: flex;
@@ -150,7 +151,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.8);
+    transform: scale(0.9);
+    padding-top: 80px;
 }
 .main-ticketlucky-content-box {
     position: relative;
@@ -164,6 +166,7 @@
     min-height: 600px;
     background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 24px;
 }
 .header-menu {
@@ -188,6 +191,7 @@
     height: 39px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
@@ -209,7 +213,6 @@
     width: 120px;
     height: 39px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%) !important;
-    backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
@@ -234,6 +237,7 @@
     height: 39px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%) !important;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 500;
@@ -328,6 +332,7 @@
     height: 31px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 8px;
     margin-top: 5px;
     font-family: "Quicksand";
@@ -376,6 +381,7 @@
     height: 30px;
     background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 12px;
     font-family: "Quicksand";
     font-style: normal;
@@ -488,6 +494,13 @@
     line-height: 15px;
     text-align: center;
     color: #200249;
+}
+.list-winner {
+    height: 300px;
+    overflow-y: scroll;
+}
+.list-winner::-webkit-scrollbar {
+    display: none;
 }
 @media (max-width: 430px) {
     .total_reward_jackport_detail {

@@ -144,6 +144,17 @@
 }
 
 /* --------------profile--------------------- */
+.profile-wrap {
+    height: 100%;
+    overflow: scroll;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-wrap::-webkit-scrollbar {
+    display: none;
+}
 .main-profile {
     display: flex;
     justify-content: center;
@@ -358,5 +369,10 @@
 @media (max-width: 380px) {
     .main-profile {
         transform: scale(0.75);
+    }
+}
+@media (max-height: 700px) {
+    .main-profile {
+        padding: 100px 0;
     }
 }

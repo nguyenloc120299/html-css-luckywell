@@ -36,6 +36,7 @@ body {
     background-size: 100%;
     background-blend-mode: overlay;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 .header_main {
     display: flex;
@@ -183,7 +184,6 @@ li {
     padding: 8px 0px 12px;
     width: 314px;
     height: 51px;
-
 }
 .menu-list {
     display: flex;
@@ -239,6 +239,7 @@ li {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2);
     border-radius: 8px;
     overflow: hidden;
     flex-direction: column;
@@ -425,9 +426,9 @@ li {
         height: 100vh;
         margin-top: 110px;
         overflow: scroll;
-         font-family: "Quicksand", sans-serif;
+        font-family: "Quicksand", sans-serif;
     }
-    .game-main::-webkit-scrollbar{
+    .game-main::-webkit-scrollbar {
         display: none;
     }
 }

@@ -37,6 +37,7 @@
     background-size: 100%;
     background-blend-mode: overlay;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 .header_main {
     display: flex;
@@ -281,7 +282,6 @@
     height: 295px;
     max-width: 295px;
     width: 100%;
-
 }
 .lucky-well-spin img {
     width: 100%;

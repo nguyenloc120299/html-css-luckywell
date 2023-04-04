@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     padding: 20px 24px;
     gap: 12px;
     isolation: isolate;
-    max-width: 298px;
+    max-width: 305px;
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.4);
@@ -46,6 +46,9 @@
 .popup-daily .spin-popup {
     position: relative;
 }
+.popup-daily .spin-popup img {
+    mix-blend-mode: revert;
+}
 .amount-receive {
     position: absolute;
     left: 50%;
@@ -63,6 +66,12 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+/* .effect-500-coin {
+    background: url(../images/group-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 .popup-daily .coin-1 {
     position: absolute;
     width: 59.23px;
@@ -76,10 +85,10 @@
     background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
 }
 .content-text {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     display: flex;
     align-items: center;
@@ -92,7 +101,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
@@ -141,7 +150,7 @@
     visibility: hidden;
 }
 .content-text-goodluck {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
@@ -179,7 +188,7 @@
     padding: 8px 24px;
 }
 .content-text-gameover {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -189,6 +198,18 @@
     text-align: center;
     text-transform: capitalize;
 
+    color: #131313;
+}
+.text-goodluck {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
     color: #131313;
 }
 @media (max-width: 992px) {

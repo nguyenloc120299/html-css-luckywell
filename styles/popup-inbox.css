@@ -140,6 +140,9 @@
     height: 386px;
     overflow-y: scroll;
 }
+.inbox-main-content::-webkit-scrollbar {
+    display: none;
+}
 .row-inbox {
     display: flex;
     justify-content: space-between;

@@ -40,6 +40,7 @@
     background-size: 100%;
     background-blend-mode: overlay;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 .header_main {
     display: flex;
@@ -147,11 +148,12 @@
 .main-ticketlucky-content {
     width: 100%;
     margin-top: 275px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.8);
+    transform: scale(0.9);
+    padding-top: 80px;
 }
 .main-ticketlucky-content-box {
     position: relative;
@@ -165,6 +167,7 @@
     min-height: 400px;
     background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 24px;
 }
 .header-menu {
@@ -210,7 +213,7 @@
     height: 39px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 500;
@@ -234,6 +237,7 @@
     height: 39px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 500;
@@ -327,6 +331,7 @@
     height: 31px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 8px;
     margin-top: 5px;
     font-family: "Quicksand";
