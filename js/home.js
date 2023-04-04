@@ -15,6 +15,7 @@ let img5 = "url(../images/guide_f.png)"
 if (btn)
     btn.onclick = function () {
         spiner.style.transform = "translate(-50%, -50%) rotate(" + number * 5 + "deg)";
+        spiner.style.transition= "3.5s"
         number = Math.ceil(Math.random() * 1000);
     }
 footer.style.background = "url(../images/bg_footer.png)"
