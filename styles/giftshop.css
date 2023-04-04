@@ -110,7 +110,7 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 .giftshop-picture {
     margin-top: 48px;
@@ -118,7 +118,7 @@ body {
     height: 305px;
     max-height: 340px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 .giftshop-picture img {
     width: 295px;
@@ -145,7 +145,7 @@ body {
 .title-gift-shop-text {
     width: 229px;
     height: 49px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
@@ -153,22 +153,22 @@ body {
     display: flex;
     text-align: center;
     text-transform: uppercase;
-    background: linear-gradient(20.68deg, #6D68AF -114.33%, #EE4599 -7.6%, #F5A2C6 80.08%);
+    background: linear-gradient(20.68deg, #6d68af -114.33%, #ee4599 -7.6%, #f5a2c6 80.08%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.banner {
+/* .banner {
     width: 100%;
     height: auto;
     position: absolute;
     top: 220px;
     display: flex;
     justify-content: center;
-}
-.banner img{
-    height: 165.45px;
-    width: 430px;
+} */
+.banner img {
+    width: 100%;
+    height: 100%;
 }
 li {
     list-style-type: none;
@@ -183,6 +183,7 @@ li {
     padding: 8px 0px 12px;
     width: 314px;
     height: 51px;
+
 }
 .menu-list {
     display: flex;
@@ -195,29 +196,32 @@ li {
     width: 60px;
     height: 31px;
     border: none;
-    border-radius:8px;
+    border-radius: 8px;
     padding: 8px, 16px, 8px, 16px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: #200249;
 }
 .btn-data {
-    background-image: linear-gradient(to right, #6D68AF , #EE4599, #F5A2C6);
+    background-image: linear-gradient(to right, #6d68af, #ee4599, #f5a2c6);
+    color: #fff;
 }
 .btn-sms {
-    background-image: linear-gradient(to right, #FDC16E , #FFD862, #FFEA54, #FFF34D);
+    background-image: linear-gradient(to right, #fdc16e, #ffd862, #ffea54, #fff34d);
 }
 .btn-voice {
-    background-image: linear-gradient(to right, #FDC16E , #FFD862, #FFEA54, #FFF34D);
+    background-image: linear-gradient(to right, #fdc16e, #ffd862, #ffea54, #fff34d);
 }
 .btn-loyalty-point {
     width: 107px;
     height: 31px;
-    background-image: linear-gradient(to right, #FDC16E , #FFD862, #FFEA54, #FFF34D);
+    background-image: linear-gradient(to right, #fdc16e, #ffd862, #ffea54, #fff34d);
 }
 .card-list {
     width: 100%;
-    height: 384px;
-    overflow: scroll;
     display: flex;
     justify-content: center;
+    padding-bottom: 150px;
 }
 .card {
     width: 336px;
@@ -250,13 +254,13 @@ li {
     height: 19px;
     left: -80px;
     top: 3px;
-    background: linear-gradient(311.52deg, #FDC16E 29.15%, #FFD862 45.2%, #FFEA54 61.27%, #FFF34D 70.85%);
+    background: linear-gradient(311.52deg, #fdc16e 29.15%, #ffd862 45.2%, #ffea54 61.27%, #fff34d 70.85%);
     transform: rotate(-30deg);
 }
 .card-item-bonus-number {
     width: 34px;
     height: 15px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -280,12 +284,12 @@ li {
     width: 77px;
     height: 29px;
 
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
-    background: linear-gradient(55.29deg, #FDC16E 0%, #FFD862 38.5%, #FFEA54 77.03%, #FFF34D 100%);
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -305,13 +309,13 @@ li {
     width: 49px;
     height: 15px;
 
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .card-item-content-day {
     display: flex;
@@ -329,7 +333,7 @@ li {
 .card-item-content-day-text {
     width: 31px;
     height: 15px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -337,7 +341,7 @@ li {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -407,14 +411,23 @@ li {
     text-transform: capitalize;
     color: #ffffff;
 }
-@media (min-width: 690px) {
-    .game-main {
-        transform: scale(0.7);
-    }
+.img-bg-gift-shop {
+    background: url("../images/Flower\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: screen;
 }
+
 @media (max-width: 690px) {
     .game-main {
         width: 100%;
-        height:auto;
+        height: 100vh;
+        margin-top: 110px;
+        overflow: scroll;
+         font-family: "Quicksand", sans-serif;
+    }
+    .game-main::-webkit-scrollbar{
+        display: none;
     }
 }
