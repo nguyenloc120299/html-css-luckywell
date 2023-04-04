@@ -1,0 +1,516 @@
+@import url("./global.css");
+@import url("./popup-buy-ticket.css");
+.items-center {
+    align-items: center;
+}
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/bg-ticket-lucky.png"),
+        radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%) !important;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrap-page {
+    max-width: 992px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------header------------------ */
+.header {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+    left: 50%;
+    width: 100%;
+    background: url("../images/rectangle1.png");
+    background-repeat: no-repeat;
+    background-position: center -16px;
+    isolation: isolate;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    backdrop-filter: blur(30px);
+}
+.header_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 20px 16px 36px;
+}
+.header .coin {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 57px;
+    height: 23px;
+    position: relative;
+    background: url("../images/Variant3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.header .coin .box-coin {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px 4px 24px;
+    gap: 10px;
+    /* width: 57px;
+    height: 23px;
+    background: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 8px; */
+}
+.header .coin .box-coin .amount {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.coin-1 {
+    position: absolute;
+    width: 23.58px;
+    height: 23.5px;
+    top: -3px;
+    transform: rotate(36deg);
+    z-index: 2;
+}
+.coin-2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    transform: rotate(52.86deg);
+}
+.coin-1 img,
+.coin-2 img {
+    object-fit: cover;
+}
+.header_info {
+}
+.home {
+    width: 100%;
+    height: 100%;
+    /* background: url("../images/bg.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 112px;
+    height: 48px;
+}
+.header_info_avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 505;
+    background: url("../images/avatar.png");
+}
+.header_info_icon {
+    width: 24px;
+    height: 24px;
+}
+.img__title {
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------ticket lucky--------------------- */
+.main-ticketlucky-content {
+    width: 100%;
+    margin-top: 275px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+}
+.main-ticketlucky-content-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    max-width: 360px;
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
+    backdrop-filter: blur(2px);
+    border-radius: 24px;
+}
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: 39px;
+    border-top-left-radius: 24px;
+    overflow: hidden;
+    border-top-right-radius: 24px;
+}
+.btn-buymascot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 39px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    backdrop-filter: blur(30px);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.btn-luckyticket {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 39px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%) !important;
+    backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249 !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.btn-honoring {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 39px;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%) !important;
+    backdrop-filter: blur(30px);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+}
+
+.text-intro-luckyticket {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.list-ticketlucky {
+    width: 100%;
+    padding: 10px 5px;
+}
+.tiket-lucky-item {
+    max-width: 325px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px 0;
+}
+.text-amount-point {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+.input-amount-luckyticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    max-width: 150px;
+    width: 1005;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+    margin-top: 5px;
+}
+.btn_buy_ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 31px;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    margin-top: 5px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.title-gift-shop {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+}
+.title-gift-shop {
+    z-index: 9;
+}
+.list-ticket-image {
+    position: absolute;
+    top: -80px;
+    z-index: 1;
+}
+.scroll-ticket-lucky {
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-ticket-lucky::-webkit-scrollbar {
+    display: none;
+}
+.winner_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 139px;
+    height: 30px;
+    background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
+    backdrop-filter: blur(30px);
+    border-radius: 12px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.row-baner {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.banner_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    gap: 30px;
+}
+
+/* -------popup winner list------------- */
+.popup-winnerlist {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.25s, opacity 0.25s;
+}
+.popup-winnerlist:target {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.25s;
+}
+.popup-winnerlist-content {
+    width: 100%;
+    min-height: 272.28px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-winnerlist-content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 12px;
+    isolation: isolate;
+    max-width: 298px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+.close-popup {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    cursor: pointer;
+    z-index: 99;
+}
+.popup-winnerlist .line {
+    width: 250px;
+    height: 1px;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+}
+.table-content table {
+    width: 100%;
+    font-size: 18px;
+    border-collapse: collapse;
+}
+.table-content table thead tr {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #200249;
+}
+.table-content table tbody tr {
+    border-bottom: 1px solid #200249;
+    height: 25px;
+}
+.table-content table tbody td {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #200249;
+}
+@media (max-width: 430px) {
+    .total_reward_jackport_detail {
+        max-width: 120px;
+    }
+    .text-gold {
+        font-size: 16px;
+    }
+    .total_reward_jackport div {
+        font-size: 30px;
+    }
+    .popup-rule-content-main {
+        max-width: 300px;
+    }
+}
+@media (min-width: 540px) {
+    .jaclport_package_frame {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+}
+@media (min-height: 680px) {
+    .main-ticketlucky-content {
+        margin-top: 170px;
+    }
+}

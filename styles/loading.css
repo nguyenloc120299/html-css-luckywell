@@ -29,7 +29,7 @@ body {
     width: 326px;
     height: 101px;
     background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     position: relative;
     display: flex;
@@ -48,7 +48,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-family: "Inter";
+    font-family: "Quicksand", sans-serif;
     text-transform: capitalize;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #ffffff;
