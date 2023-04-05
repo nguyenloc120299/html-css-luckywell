@@ -29,7 +29,7 @@ body {
     cursor: pointer;
     z-index: 99;
 }
-.h-screen{
+.h-screen {
     height: 100vh;
 }
 .flower-effect {
@@ -49,8 +49,8 @@ body {
     align-items: center;
     z-index: 999;
     transition: opacity 500ms;
-    background: url("../images/Flower\ \(1\).png"),rgb(0, 0, 0);
-    opacity: .7;
+    background: url("../images/Flower\ \(1\).png"), rgb(0, 0, 0);
+    opacity: 0.7;
     /* mix-blend-mode: screen; */
     background-position: center;
     background-repeat: no-repeat;

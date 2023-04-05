@@ -32,7 +32,7 @@
     width: 100%;
     background: url("../images/rectangle1.png");
     background-repeat: no-repeat;
-    background-position: center -16px;
+    background-position: center -6px;
     isolation: isolate;
     background-size: 100%;
     background-blend-mode: overlay;
@@ -140,12 +140,12 @@
 /* ------------footer---------------- */
 .footer {
     width: 100%;
-    height: 91px;
+    /* height: 91px; */
     position: fixed;
     left: 0;
-    bottom: -5px;
+    bottom: 0;
     z-index: 999;
-    background-position: center !important;
+    background-position: bottom !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
     display: flex;
@@ -190,6 +190,12 @@
     flex-direction: column;
     align-items: center;
     padding: 12px 0px;
+}
+.footer_menu img {
+    width: 36px;
+    height: 30px;
+    margin: auto;
+    display: flex;
 }
 .footer_menu_text {
     font-family: "Quicksand", sans-serif;

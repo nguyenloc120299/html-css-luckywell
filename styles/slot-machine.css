@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     background-image: url("../images/slot-machine-bg.png"),
-        radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%);
+        radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%) !important;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;

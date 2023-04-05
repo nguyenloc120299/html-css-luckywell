@@ -5,8 +5,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,13 +69,13 @@
     max-width: 298px;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.6);
     border: 1px solid #ffffff;
     border-radius: 20px;
     position: relative;
 }
-.popup-warning .popup-buy_turn-content-main{
-    background: rgba(255, 255, 255, 0.6); 
+.popup-warning .popup-buy_turn-content-main {
+    background: rgba(255, 255, 255, 0.6);
 }
 .coin-assets-1 {
     position: absolute;
@@ -369,7 +368,6 @@
     text-transform: capitalize;
     color: #200249;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
 }
 @media (max-width: 992px) {
     .game-main {

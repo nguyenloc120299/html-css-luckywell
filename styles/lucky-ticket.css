@@ -135,7 +135,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 88px 0 50px 0;
+    padding: 10px 0 50px 0;
 }
 .main-ticketlucky-content-box {
     position: relative;
@@ -258,7 +258,7 @@
     margin: auto;
     gap: 10px;
     border-bottom: 1px solid #ffffff;
-    padding: 20px 0;
+    margin-bottom: 10px;
 }
 .text-amount-point {
     font-family: "Inter";
@@ -329,10 +329,13 @@
     justify-content: center;
     position: relative;
     z-index: 9;
+    background: url("../images/Flower\ \(1\).png");
+    mix-blend-mode: screen;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.title-gift-shop {
-    z-index: 9;
-}
+
 .list-ticket-image {
     position: absolute;
     top: -80px;
