@@ -1,11 +1,12 @@
-.popup-buy_turn {
+.popup-buy_turn,
+.popup-warning {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +22,8 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +33,8 @@
     transition: visibility 0s linear 0s, opacity 0.25s;
     font-family: "Quicksand", sans-serif;
 }
-.popup-buy_turn:target {
+.popup-buy_turn:target,
+.popup-warning:target {
     visibility: visible;
     opacity: 1;
     transition: visibility 0s linear 0s, opacity 0.25s;
@@ -72,6 +74,9 @@
     border: 1px solid #ffffff;
     border-radius: 20px;
     position: relative;
+}
+.popup-warning .popup-buy_turn-content-main{
+    background: rgba(255, 255, 255, 0.6); 
 }
 .coin-assets-1 {
     position: absolute;
@@ -339,6 +344,32 @@
     text-transform: capitalize;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-ok {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 10px;
+    width: 250px;
+    height: 36px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 @media (max-width: 992px) {
     .game-main {

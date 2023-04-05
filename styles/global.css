@@ -29,6 +29,9 @@ body {
     cursor: pointer;
     z-index: 99;
 }
+.h-screen{
+    height: 100vh;
+}
 .flower-effect {
     position: absolute;
 }
@@ -39,15 +42,16 @@ body {
     width: 100%;
     height: 100%;
     /* background: rgba(0, 0, 0, 0.5); */
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
     transition: opacity 500ms;
-    background-image: url("../images/Flower\ \(1\).png");
-    mix-blend-mode: screen;
+    background: url("../images/Flower\ \(1\).png"),rgb(0, 0, 0);
+    opacity: .7;
+    /* mix-blend-mode: screen; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

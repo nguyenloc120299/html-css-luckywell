@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/giftshop.css" rel="stylesheet" />
-    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@200;300;500;600;700;900&family=Montserrat:wght@200;400;500;700;900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link href="./styles/global.css" rel="stylesheet" />
   </head>
   <body>
@@ -13,30 +17,26 @@
     <div class="main">
       <div class="wrap-page">
         <!-- --------------------header------------------>
-         <div class="header">
-                <div class="header_main">
-                    <div class="flex items-center" style="gap:5px">
-                        <div>
-                            <img src="./images/back_home.svg" />
-                        </div>
-                        <div class="coin">
-                            <div class="box-coin">
-                                <div class="amount">
-                                    300
-                                </div>
-                            </div>
-                            <div class="coin-1">
-                                <img src="./images/coin-1.svg" />
-                            </div>
-                            <div class="coin-2">
-                                <img src="./images/coin-2.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    
+        <div class="header">
+          <div class="header_main">
+            <div class="flex items-center" style="gap: 5px">
+              <div>
+                <img src="./images/back_home.svg" />
+              </div>
+              <div class="coin">
+                <div class="box-coin">
+                  <div class="amount">300</div>
                 </div>
-
+                <div class="coin-1">
+                  <img src="./images/coin-1.svg" />
+                </div>
+                <div class="coin-2">
+                  <img src="./images/coin-2.svg" />
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
         <!-- -------------------giftshop----------------------- -->
         <div class="game-main">
           <div class="flex justify-center w-full img-bg-gift-shop">
@@ -234,6 +234,64 @@
                 <img src="./images/guide-menu.svg" />
                 <div class="footer_menu_text">Guide</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------ popup received------------ -->
+
+      <div class="popup-receiveMB" id="popup-receiveMB">
+        <div class="popup-receiveMB-content">
+          <div class="popup-receiveMB-content-main">
+            <div>
+              <img src="./images/congratulation.png" />
+            </div>
+            <div class="line"></div>
+            <div class="text-popup-receive">
+              You received 200MB.<br />
+              Please check your data balance
+            </div>
+            <div class="flex">
+              <div class="btn_history">History</div>
+              <div class="btn_close">Close</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-receiveMB_fail" id="popup-receiveMB_fail">
+        <div class="popup-receiveMB-content">
+          <div class="popup-receiveMB-content-main">
+            <div>
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.7808 33.9824L24.5968 24.8384V25.7984L18.2368 17.1824H19.6768L25.2928 24.7664H24.7648L30.3808 17.1824H31.7488L25.4368 25.7024V24.8864L32.2048 33.9824H30.7648L24.7168 25.8704H25.2208L19.2208 33.9824H17.7808Z"
+                  fill="#FF2C78"
+                />
+                <rect
+                  x="1.5"
+                  y="1.98242"
+                  width="47"
+                  height="47"
+                  rx="23.5"
+                  stroke="#FF2C78"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <div class="line"></div>
+            <div class="text-popup-receive">
+              You have not enough point to buy
+            </div>
+            <div class="flex">
+              <div class="btn_close">Close</div>
             </div>
           </div>
         </div>

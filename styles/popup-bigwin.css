@@ -21,7 +21,7 @@
     background: url(../images/ng-popupwin.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 .popup-bigwin-content-main {
     display: flex;
