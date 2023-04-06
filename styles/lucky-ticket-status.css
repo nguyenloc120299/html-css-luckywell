@@ -154,6 +154,7 @@
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border-radius: 24px;
+    z-index: 99;
 }
 .header-menu {
     display: flex;
@@ -225,7 +226,7 @@
     -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     display: flex;
@@ -336,6 +337,11 @@
     justify-content: center;
     position: relative;
     z-index: 9;
+    background: url("../images/Flower\ \(1\).png");
+    mix-blend-mode: screen;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .title-gift-shop {
     z-index: 9;
@@ -445,8 +451,4 @@
         margin-bottom: 12px;
     }
 }
-@media (min-height: 680px) {
-    .main-ticketlucky-content {
-        margin-top: 170px;
-    }
-}
+

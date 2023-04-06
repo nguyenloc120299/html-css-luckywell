@@ -332,7 +332,6 @@ li {
     flex-grow: 0;
 }
 .card-item-content-day-text {
-    width: 31px;
     height: 15px;
     font-family: "Inter";
     font-style: normal;
@@ -418,6 +417,7 @@ li {
     background-position: center;
     background-size: cover;
     mix-blend-mode: screen;
+    height: 90px;
 }
 
 /* -----popup----- */
