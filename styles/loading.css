@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+@import url("./global.css");
 .main {
     height: 100vh;
     width: 100vw;
@@ -54,6 +55,23 @@ body {
     color: #ffffff;
     width: 100%;
     margin-bottom: 8px;
+}
+.text span {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 5px;
 }
 .progress-bar {
     max-width: 280px;

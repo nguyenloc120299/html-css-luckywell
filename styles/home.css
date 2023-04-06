@@ -131,6 +131,9 @@
     height: 48px;
     border-radius: 505;
     background: url("../images/avatar.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .header_info_icon {
     width: 24px;
@@ -145,6 +148,7 @@
     left: 0;
     bottom: 0;
     z-index: 999;
+    background: url("../images/bg_footer.png");
     background-position: bottom !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
@@ -166,6 +170,8 @@
     width: 104px;
     height: 40px;
     background: #200249;
+    font-family: "Montserrat";
+    font-family: 900;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -251,13 +257,8 @@
     left: -20px;
 }
 
-/* ------------LUCKYWELL--------------- */
+/* ------------LUCKYWELL GAME--------------- */
 .game-main {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%); */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -268,14 +269,6 @@
     height: 375px;
     max-width: 375px;
     width: 100%;
-
-    /* background: url("../images/spin-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 .spin-bg {
     width: 100%;
@@ -321,12 +314,55 @@
     top: -55px;
     z-index: 10;
 }
+.lucky-well-buy-turn span {
+    font-family: "Inter";
+    font-style: normal;
+    position: absolute;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(161.26deg, #fffef8 -48.24%, #fdc16e 114.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
 .number-lucky-well {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 20;
+}
+.number-lucky-well span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .arow_lucky_well {
     position: absolute;
@@ -476,10 +512,7 @@
 }
 @media (max-width: 430px) {
     .game-main {
-        transform: scale(0.9);
-    }
-    .lucky-well {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 }
 @media (min-width: 678px) {

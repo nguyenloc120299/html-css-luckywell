@@ -18,7 +18,7 @@ if (btn)
         spiner.style.transition = "3.5s"
         number = Math.ceil(Math.random() * 1000);
     }
-footer.style.background = "url(../images/bg_footer.png)"
+// footer.style.background = "url(../images/bg_footer.png)"
 
 mission.onclick = function () {
     return footer.style.background = img1

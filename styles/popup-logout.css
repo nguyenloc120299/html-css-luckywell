@@ -26,13 +26,13 @@
     width: 223px;
     height: 166px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 24px;
+    position: relative;
 }
 .popup-logout .line {
     width: 100%;
