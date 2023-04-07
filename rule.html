@@ -1,217 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/home.css" rel="stylesheet" />
+    <link href="./styles/rule.css" rel="stylesheet" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/home.css" rel="stylesheet">
-    <link href="./styles/rule.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@200;300;500;600;700;900&family=Montserrat:wght@200;400;500;700;900&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@200;300;500;600;700;900&family=Montserrat:wght@200;400;500;700;900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title></title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <div class="wrap-page">
-            <!-- --------------------header------------------>
-            <div class="header">
-                <div class="header_main">
-                    <div class="flex items-center" style="gap:5px">
-                        <div>
-                            <img src="./images/back_home.svg" />
-                        </div>
-                        <div class="coin">
-                            <div class="box-coin">
-                                <div class="amount">
-                                    300
-                                </div>
-                            </div>
-                            <div class="coin-1">
-                                <img src="./images/coin-1.svg" />
-                            </div>
-                            <div class="coin-2">
-                                <img src="./images/coin-2.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./images/spin-menu-icon.svg" />
-                    </div>
+      <div class="wrap-page">
+        <!-- --------------------header------------------>
+        <div class="header">
+          <div class="header_main">
+            <div class="flex items-center" style="gap: 5px">
+              <div>
+                <img src="./images/back_home.svg" />
+              </div>
+              <div class="coin">
+                <div class="box-coin">
+                  <div class="amount">300</div>
                 </div>
-
-            </div>
-
-            <div class="footer" id="footer">
-                <div class=" footer_main">
-                    <div class="footer_menu">
-                        <div id="inbox">
-                            <img src="./images/inbox-menu.svg" />
-                            <div class="footer_menu_text">
-                                inbox
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="footer_menu">
-                        <div id="gift_shop">
-                            <img src="./images/gift-shop.svg" />
-                            <div class="footer_menu_text">
-                                gift shop
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="btn_mission" id="mission">
-                        <div class="btn_mission_text">
-                            Mission
-                        </div>
-                    </div>
-                    <div class="footer_menu">
-                        <div id="history">
-                            <img src="./images/history.svg" />
-                            <div class="footer_menu_text">
-                                History
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer_menu">
-                        <div id="guide">
-                            <img src="./images/guide-menu.svg" />
-                            <div class="footer_menu_text">
-                                Guide
-                            </div>
-                        </div>
-                    </div>
+                <div class="coin-1">
+                  <img src="./images/coin-1.svg" />
                 </div>
-            </div>
-            <div class="scroll-ticket-lucky">
-                <div class="main-ticketlucky-content">
-                    <div>
-
-                        <div class="main-ticketlucky-content-box">
-                            <div class="title-history">
-                                <span>guide</span>
-                            </div>
-                            <div class="text-custom">Complete mission to receive free spins</div>
-
-                            <div class="popup-mision-content">
-                                <div class="popup-mision-content-main">
-                                    <div>
-                                        <img src="./images/mision.png" />
-                                    </div>
-                                    <div class="content-mission">
-                                        <div class="row-mision">
-                                            <div class="title-text-mission">Login Lucky Draw daily</div>
-                                            <div class="row-mission-bottom">
-                                                <div class="left_content">
-                                                    <img src="./images/turn-icon-1.svg" />
-                                                    <span>1 Turn</span>
-                                                </div>
-                                                <div class="right_content">
-                                                    <a href="#popup-mision-detail" class="btn_mission_detail">Detail</a>
-                                                    <div class="btn_mission_complete">Complete</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row-mision">
-                                            <div class="title-text-mission">
-                                                Payments on MytelPay with value over 5.000 Ks
-                                            </div>
-                                            <div class="row-mission-bottom">
-                                                <div class="left_content">
-                                                    <img src="./images/turn-icon-1.svg" />
-                                                    <span>1 Turn</span>
-                                                </div>
-                                                <div class="right_content">
-                                                    <a href="#popup-mision-detail" class="btn_mission_detail">Detail</a>
-                                                    <div class="btn_mission_complete">Complete</div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-custom">Complete mission to receive free spins</div>
-                            <div class="popup-inbox-content-main">
-                                <div>
-                                    <img src="./images/inbox-title.svg" />
-                                </div>
-
-                                <div class="inbox-main-content">
-                                    <div class="row-inbox">
-                                        <div>
-                                            <img src="./images/icon_inbox.png" />
-                                        </div>
-                                        <div class="row-inbox-content">
-                                            <div class="row-inbox-content-title">
-                                                Login reward
-                                            </div>
-                                            <div class="row-inbox-content-text">
-                                                You are recevied 1 spin for logging in daily
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-inbox">
-                                        <div>
-                                            <img src="./images/icon_inbox.png" />
-                                        </div>
-                                        <div class="row-inbox-content">
-                                            <div class="row-inbox-content-title">
-                                                Spread reward
-                                            </div>
-                                            <div class="row-inbox-content-text">
-                                                You have received 2 spins for inviting 5 friends to sign up for MytelPay
-                                                app
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-inbox">
-                                        <div>
-                                            <img src="./images/icon_inbox.png" />
-                                        </div>
-                                        <div class="row-inbox-content">
-                                            <div class="row-inbox-content-title">
-                                                Spread reward
-                                            </div>
-                                            <div class="row-inbox-content-text">
-                                                You have received 1 spin for the settlement of a transaction with a
-                                                value less than or
-                                                equal to 5,000MMK
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-inbox">
-                                        <div>
-                                            <img src="./images/icon_inbox.png" />
-                                        </div>
-                                        <div class="row-inbox-content">
-                                            <div class="row-inbox-content-title">
-                                                Spread reward
-                                            </div>
-                                            <div class="row-inbox-content-text">
-                                                You have received 1 spin for the settlement of a transaction with a
-                                                value less than or
-                                                equal to 5,000MMK
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="coin-2">
+                  <img src="./images/coin-2.svg" />
                 </div>
+              </div>
             </div>
+            <div>
+              <img src="./images/spin-menu-icon.svg" />
+            </div>
+          </div>
         </div>
+
+        <div class="footer" id="footer">
+          <div class="footer_main">
+            <div class="footer_menu">
+              <div id="inbox">
+                <img src="./images/inbox-menu.svg" />
+                <div class="footer_menu_text">inbox</div>
+              </div>
+            </div>
+
+            <div class="footer_menu">
+              <div id="gift_shop">
+                <img src="./images/gift-shop.svg" />
+                <div class="footer_menu_text">gift shop</div>
+              </div>
+            </div>
+            <div class="btn_mission" id="mission">
+              <div class="btn_mission_text">Mission</div>
+            </div>
+            <div class="footer_menu">
+              <div id="history">
+                <img src="./images/history.svg" />
+                <div class="footer_menu_text">History</div>
+              </div>
+            </div>
+            <div class="footer_menu">
+              <div id="guide">
+                <img src="./images/guide-menu.svg" />
+                <div class="footer_menu_text">Guide</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-ticket-lucky">
+          <div class="main-ticketlucky-content">
+            <div>
+              <div class="main-ticketlucky-content-box">
+                <div class="title-history">
+                  <span>guide</span>
+                </div>
+                <div class="main-ticketlucky-scroll">
+                  <div class="text-custom">
+                    Complete mission to receive free spins
+                  </div>
+                  <div class="popup-mision-content">
+                    <div class="popup-mision-content-main">
+                      <div>
+                        <img src="./images/mision.png" />
+                      </div>
+                      <div class="content-mission">
+                        <div class="row-mision">
+                          <div class="title-text-mission">
+                            Login Lucky Draw daily
+                          </div>
+                          <div class="row-mission-bottom">
+                            <div class="left_content">
+                              <img src="./images/turn-icon-1.svg" />
+                              <span>1 Turn</span>
+                            </div>
+                            <div class="right_content">
+                              <a
+                                href="#popup-mision-detail"
+                                class="btn_mission_detail"
+                                >Detail</a
+                              >
+                              <div class="btn_mission_complete">Complete</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row-mision">
+                          <div class="title-text-mission">
+                            Payments on MytelPay with value over 5.000 Ks
+                          </div>
+                          <div class="row-mission-bottom">
+                            <div class="left_content">
+                              <img src="./images/turn-icon-1.svg" />
+                              <span>1 Turn</span>
+                            </div>
+                            <div class="right_content">
+                              <a
+                                href="#popup-mision-detail"
+                                class="btn_mission_detail"
+                                >Detail</a
+                              >
+                              <div class="btn_mission_complete">Complete</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-custom">
+                    Complete mission to receive free spins
+                  </div>
+                  <div class="popup-inbox-content-main">
+                    <div>
+                      <img src="./images/inbox-title.svg" />
+                    </div>
+
+                    <div class="inbox-main-content">
+                      <div class="row-inbox">
+                        <div>
+                          <img src="./images/icon_inbox.png" />
+                        </div>
+                        <div class="row-inbox-content">
+                          <div class="row-inbox-content-title">
+                            Login reward
+                          </div>
+                          <div class="row-inbox-content-text">
+                            You are recevied 1 spin for logging in daily
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row-inbox">
+                        <div>
+                          <img src="./images/icon_inbox.png" />
+                        </div>
+                        <div class="row-inbox-content">
+                          <div class="row-inbox-content-title">
+                            Spread reward
+                          </div>
+                          <div class="row-inbox-content-text">
+                            You have received 2 spins for inviting 5 friends to
+                            sign up for MytelPay app
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row-inbox">
+                        <div>
+                          <img src="./images/icon_inbox.png" />
+                        </div>
+                        <div class="row-inbox-content">
+                          <div class="row-inbox-content-title">Present</div>
+                          <div class="row-inbox-content-text">
+                            You have received 3 spins for participating in the
+                            game “shoot fish”
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row-inbox">
+                        <div>
+                          <img src="./images/icon_inbox.png" />
+                        </div>
+                        <div class="row-inbox-content">
+                          <div class="row-inbox-content-title">Present</div>
+                          <div class="row-inbox-content-text">
+                            You have received 3 spins for participating in the
+                            game “shoot fish”
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row-inbox">
+                        <div>
+                          <img src="./images/icon_inbox.png" />
+                        </div>
+                        <div class="row-inbox-content">
+                          <div class="row-inbox-content-title">Present</div>
+                          <div class="row-inbox-content-text">
+                            You have received 3 spins for participating in the
+                            game “shoot fish”
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-custom">
+                    Redeem points for gifts in the gift shop
+                  </div>
+                  <div class="popup-the-gift-shop">
+                    <div class="menu-group">
+                      <ul class="menu-list">
+                        <li>
+                          <button class="btn btn-data">Data</button>
+                        </li>
+                        <li>
+                          <button class="btn btn-sms">SMS</button>
+                        </li>
+                        <li>
+                          <button class="btn btn-voice">Voice</button>
+                        </li>
+                        <li>
+                          <button class="btn btn-loyalty-point">
+                            Loyalty Point
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="card-list">
+                      <div class="card-item">
+                        <div class="card-item-bonus">
+                          <span class="card-item-bonus-number">+25%</span>
+                        </div>
+                        <div class="card-item-content">
+                          <div class="card-item-content-day">
+                            <span class="card-item-content-day-text"
+                              >1 Day</span
+                            >
+                          </div>
+                          <div class="card-item-mb">
+                            <span class="card-item-mb-number">50 MB</span>
+                          </div>
+                        </div>
+                        <div class="card-item-point">
+                          <span class="card-item-point-number">25 Point</span>
+                        </div>
+                      </div>
+                      <div class="card-item">
+                        <div class="card-item-bonus">
+                          <span class="card-item-bonus-number">+100%</span>
+                        </div>
+                        <div class="card-item-content">
+                          <div class="card-item-content-day">
+                            <span class="card-item-content-day-text"
+                              >1 Day</span
+                            >
+                          </div>
+                          <div class="card-item-mb">
+                            <span class="card-item-mb-number">100 MB</span>
+                          </div>
+                        </div>
+                        <div class="card-item-point">
+                          <span class="card-item-point-number">50 Point</span>
+                        </div>
+                      </div>
+                      <div class="card-item">
+                        <div class="card-item-bonus">
+                          <span class="card-item-bonus-number">+25%</span>
+                        </div>
+                        <div class="card-item-content">
+                          <div class="card-item-content-day">
+                            <span class="card-item-content-day-text"
+                              >1 Day</span
+                            >
+                          </div>
+                          <div class="card-item-mb">
+                            <span class="card-item-mb-number">200 MB</span>
+                          </div>
+                        </div>
+                        <div class="card-item-point">
+                          <span class="card-item-point-number">100 Point</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-custom">
+                    Buy more spins to increase your chances of winning
+                  </div>
+                  <div class="popup-buy-turn">
+                    <div class="popup-buy_turn-content">
+                        <div class="popup-buy_turn-content-main">
+                          <div>
+                            <img src="./images/buy_turn_title.png" />
+                          </div>
+                          <div class="line"></div>
+                          <div class="content-text">Please choose quantity</div>
+                          <div class="form_control_amout">
+                            <div class="btn_reduce">-</div>
+                            <div class="amount">0</div>
+                            <div class="btn_increase">+</div>
+                          </div>
+                          <div
+                            class="flex justify-between items-center w-full text-total-price"
+                          >
+                            <span>Total Price:</span>
+                            <span style="font-weight: 700">100MMK</span>
+                          </div>
+                          <a href="#buy_turn_confirm" class="btn-buy">
+                            <div>Buy</div>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="text-custom">
+                    Buy mascot to participate in the game exploding jars to win big gifts daily, weekly, monthly.
+                  </div>
+                  <div class="ticketlucky-content-box">
+                    <div class="main_ticketlucky-content-box">
+                        <div class="header-menu">
+                            <a href="/lucky-ticket.html" class="btn-buymascot">
+                                Buy mascot
+                            </a>
+                            <a href="lucky-ticket-status.html" class="btn-luckyticket">
+                                Lucky ticket
+                            </a>
+                            <div class="btn-honoring">
+                                Buy mascot
+                            </div>
+                        </div>
+                        <div class="text-intro-luckyticket">
+                            Buy mascots to participate in the jar explosion event
+                        </div>
+                        <div class="list-ticketlucky">
+                            <div class="tiket-lucky-item">
+                                <img src="./images/item-licky-1.png" />
+                                <div>
+                                    <h3 class="text-amount-point">10.000 Point</h3>
+                                    <div class="input-amount-luckyticket">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                    <div class="btn_buy_ticket">Buy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="text-custom">
+                        The spins earned from completing mission daily are only valid for one day (from 00:00:00 to 23:59:59 of the same day)
+                    </div>
+
+                    <div class="btn_i_got_it">I Got It</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src=" ./js/home.js"></script>
-</body>
-
+  </body>
 </html>

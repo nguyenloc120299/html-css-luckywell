@@ -430,6 +430,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    border: 1px solid #fdc16e;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
 }
 @media (max-width: 430px) {
     .total_reward_jackport_detail {
