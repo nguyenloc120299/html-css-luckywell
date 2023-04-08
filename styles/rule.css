@@ -134,7 +134,7 @@
 .main-ticketlucky-content {
     width: 100%;
     margin-top: 250px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +146,7 @@
     align-items: center;
     padding: 0px;
     gap: 16px;
-    max-width: 360px;
+    max-width: 400px;
     width: 100%;
     min-height: 400px;
     background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
@@ -451,14 +451,21 @@
     padding: 20px 24px;
     gap: 12px;
     isolation: isolate;
-    max-width: 298px;
+    /* max-width: 298px; */
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.4);
     border: 1px solid #ffffff;
     border-radius: 20px;
     position: relative;
-    transform: scale(0.95);
+    /* transform: scale(0.95); */
+    width: 100%;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    transform: scale(0.96);
+    max-width: 338px;
 }
 .coin-assets-1 {
     position: absolute;
@@ -599,6 +606,527 @@
     color: #ffffff;
     text-align: left;
 }
+.main-ticketlucky-scroll{
+    overflow: scroll;
+    max-height: 750px; 
+    margin-bottom: 20px;
+    width: 96%;
+}
+/*   Redeem points for gifts in the gift shop */
+.popup-the-gift-shop{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-group {
+    padding: 8px 0px 12px;
+    width: 314px;
+    height: fit-content;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu-list li {
+    /* margin-right: 7px; */
+    list-style: none;
+}
+.btn {
+    width: 60px;
+    height: 31px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px, 16px, 8px, 16px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: #200249;
+}
+.btn-data {
+    background-image: linear-gradient(to right, #6d68af, #ee4599, #f5a2c6);
+    color: #fff;
+}
+.btn-sms {
+    background-image: linear-gradient(to right, #fdc16e, #ffd862, #ffea54, #fff34d);
+}
+.btn-voice {
+    background-image: linear-gradient(to right, #fdc16e, #ffd862, #ffea54, #fff34d);
+}
+.btn-loyalty-point {
+    width: 107px;
+    height: 31px;
+    background-image: linear-gradient(to right, #fdc16e, #ffd862, #ffea54, #fff34d);
+}
+.card-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+.card-item {
+    box-sizing: border-box;
+    width: 160px;
+    height: 80px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.card-item-bonus {
+    display: flex;
+    justify-content: center;
+    padding: 2px 40px;
+    gap: 10px;
+    position: absolute;
+    width: 114px;
+    height: 19px;
+    left: -80px;
+    top: 3px;
+    background: linear-gradient(311.52deg, #fdc16e 29.15%, #ffd862 45.2%, #ffea54 61.27%, #fff34d 70.85%);
+    transform: rotate(-30deg);
+}
+.card-item-bonus-number {
+    width: 34px;
+    height: 15px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+}
+.card-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 160px;
+    height: 48px;
+}
+.card-item-mb {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.card-item-mb-number {
+    width: fit-content;
+    height: 29px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.card-item-point {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 160px;
+    height: 20px;
+    background: linear-gradient(89.02deg, #200249 46.01%, #901576 98.6%);
+    text-align: center;
+    gap: 10px;
+}
+.card-item-point-number {
+    width: 49px;
+    height: 15px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.card-item-content-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 4px 8px 0px 0px;
+    gap: 10px;
+    width: 160px;
+    height: 19px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.card-item-content-day-text {
+    height: 15px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+/* Buy more spins to increase your chances of winning */
+.popup-buy-turn{
+    display: flex;
+    justify-content: center;
+}
+.popup-buy_turn-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 12px;
+    isolation: isolate;
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+.line {
+    width: 202px;
+    height: 1px;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    margin: 10px 0;
+}
+.content-text {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    color: #200249;
+    margin: 12px 0;
+}
+.form_control_amout {
+    max-width: 200px;
+    width: 100%;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_control_amout .amount {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #200249;
+}
+.btn_reduce,
+.btn_increase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    height: 100%;
+    width: 50px;
+    color: #200249;
+    font-size: 28px;
+}
+.text-total-price {
+    max-width: 160px;
+    width: 100%;
+    margin: 12px auto;
+}
+.text-total-price span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+}
+.btn-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 10px;
+    max-width: 202px;
+    /* width: 100%; */
+    height: 35px;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    text-decoration: none;
+}
+.btn-buy div {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Buy mascot to participate in the game exploding jars to win big gifts daily, weekly, monthly. */
+.ticketlucky-content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_ticketlucky-content-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    max-width: 360px;
+    background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
+    backdrop-filter: blur(2px);
+    border-radius: 24px;
+}
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: 39px;
+    border-top-left-radius: 24px;
+    overflow: hidden;
+    border-top-right-radius: 24px;
+}
+.btn-buymascot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 39px;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    backdrop-filter: blur(30px);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.btn-luckyticket {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 39px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    backdrop-filter: blur(30px);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.btn-honoring {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 39px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    backdrop-filter: blur(30px);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.text-intro-luckyticket {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.list-ticketlucky {
+    width: 100%;
+    padding: 10px 5px;
+}
+.tiket-lucky-item {
+    max-width: 325px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.text-amount-point {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+.input-amount-luckyticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    max-width: 150px;
+    /* height: 31px; */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    /* line-height: 22px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #200249;
+    margin-top: 5px;
+}
+.btn_buy_ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 31px;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    margin-top: 5px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.title-gift-shop {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    background: url("../images/Flower\ \(1\).png");
+    mix-blend-mode: screen;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+.btn_i_got_it {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 95%;
+    height: 36px;
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 50px;
+    margin-top: 5px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 15px; */
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text-custom{
+    margin: 25px auto 8px 10px;
+}
+.text-custom:first-child{
+    margin-top: 0;
+}
 @media (max-width: 430px) {
     .total_reward_jackport_detail {
         max-width: 120px;
@@ -612,6 +1140,32 @@
     .popup-rule-content-main {
         max-width: 300px;
     }
+    .main-ticketlucky-content {
+        margin-top: 0 !important;  
+        margin-bottom: 0;
+        width: 92%;
+    }
+    .main-ticketlucky-content-box{
+        max-width: 100%;
+        transform: scale(1);
+    }
+    .popup-mision-content{
+        transform: scale(0.96);
+    }
+    .popup-inbox-content-main{
+        max-width: 345px;
+    }
+    .row-inbox{
+        height: 60px;
+    }
+    .btn_mission_complete{
+        padding: 4px 16px;
+    }
+    .main-ticketlucky-scroll{
+        max-height: 650px; 
+        width: 100%;
+    }
+    
 }
 @media (min-width: 540px) {
     .jaclport_package_frame {
@@ -621,6 +1175,7 @@
 }
 @media (min-height: 680px) {
     .main-ticketlucky-content {
-        margin-top: 210px;
+        /* margin-top: 210px; */
+        margin-top: 0;
     }
 }
