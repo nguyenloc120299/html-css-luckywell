@@ -107,7 +107,7 @@
     height: 35px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
 }
 .btn-collect div {

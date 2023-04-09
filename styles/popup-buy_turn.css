@@ -21,8 +21,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,6 +129,7 @@
     font-size: 15px;
     line-height: 15px;
     color: #200249;
+    margin-bottom: 10px;
 }
 .btn-buy {
     display: flex;
@@ -143,7 +143,7 @@
     height: 35px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     text-decoration: none;
 }
@@ -303,7 +303,7 @@
     height: 36px;
     background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -330,7 +330,7 @@
     height: 36px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     font-family: "Quicksand";
     font-style: normal;
@@ -355,7 +355,7 @@
     height: 36px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     font-family: "Quicksand";
     font-style: normal;

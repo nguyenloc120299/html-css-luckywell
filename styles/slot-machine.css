@@ -58,7 +58,7 @@
     background: rgba(255, 255, 255, 0.3);
     background-blend-mode: overlay;
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+backdrop-filter:unset;
     border-radius: 8px; */
 }
 .header .coin .box-coin .amount {
@@ -177,7 +177,7 @@
     height: 35px;
     background: #fbac34;
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     font-family: "Quicksand", sans-serif;
     font-style: normal;
@@ -201,7 +201,7 @@
     height: 35px;
     background: linear-gradient(36.65deg, #ffdbac 36.47%, #ffddae 38.48%, #fff1ca 63.7%, #fffcd5 78.71%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     justify-content: center;
     font-family: "Quicksand", sans-serif;
@@ -222,7 +222,7 @@
     height: 36px;
     background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     display: flex;
     flex-direction: row;
@@ -514,7 +514,7 @@
     height: 36px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     font-family: "Quicksand", sans-serif;
     font-style: normal;

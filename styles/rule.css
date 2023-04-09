@@ -59,7 +59,7 @@
     background: rgba(255, 255, 255, 0.3);
     background-blend-mode: overlay;
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+backdrop-filter:unset;
     border-radius: 8px; */
 }
 .header .coin .box-coin .amount {
@@ -148,7 +148,6 @@
     gap: 16px;
     max-width: 400px;
     width: 100%;
-    min-height: 400px;
     background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
     backdrop-filter: blur(2px);
     border-radius: 24px;
@@ -157,11 +156,10 @@
 }
 
 .scroll-ticket-lucky {
-    height: 100vh;
-    overflow-y: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
 }
 .scroll-ticket-lucky::-webkit-scrollbar {
     display: none;
@@ -395,7 +393,7 @@
     height: 20px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -533,7 +531,7 @@
     height: 35px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
 }
 .btn-collect div {
@@ -606,14 +604,14 @@
     color: #ffffff;
     text-align: left;
 }
-.main-ticketlucky-scroll{
+.main-ticketlucky-scroll {
     overflow: scroll;
-    max-height: 750px; 
+    max-height: 750px;
     margin-bottom: 20px;
     width: 96%;
 }
 /*   Redeem points for gifts in the gift shop */
-.popup-the-gift-shop{
+.popup-the-gift-shop {
     width: 100%;
     position: relative;
     display: flex;
@@ -786,7 +784,7 @@
     flex-grow: 0;
 }
 /* Buy more spins to increase your chances of winning */
-.popup-buy-turn{
+.popup-buy-turn {
     display: flex;
     justify-content: center;
 }
@@ -878,7 +876,7 @@
     height: 35px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     text-decoration: none;
 }
@@ -934,7 +932,7 @@
     width: 120px;
     height: 39px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
@@ -956,7 +954,7 @@
     width: 120px;
     height: 39px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
@@ -979,7 +977,7 @@
     width: 120px;
     height: 39px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
@@ -1069,7 +1067,7 @@
     width: 150px;
     height: 31px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 8px;
     margin-top: 5px;
     font-family: "Quicksand";
@@ -1094,7 +1092,7 @@
     background-position: center -20px;
     background-repeat: no-repeat;
     background-size: cover;
-}   
+}
 .btn_i_got_it {
     display: flex;
     flex-direction: row;
@@ -1105,7 +1103,7 @@
     width: 95%;
     height: 36px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     margin-top: 5px;
     font-family: "Quicksand";
@@ -1113,7 +1111,7 @@
     font-weight: 700;
     font-size: 16px;
     /* line-height: 15px; */
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1121,10 +1119,10 @@
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.text-custom{
+.text-custom {
     margin: 25px auto 8px 10px;
 }
-.text-custom:first-child{
+.text-custom:first-child {
     margin-top: 0;
 }
 @media (max-width: 430px) {
@@ -1141,36 +1139,45 @@
         max-width: 300px;
     }
     .main-ticketlucky-content {
-        margin-top: 0 !important;  
+        margin-top: 0 !important;
         margin-bottom: 0;
         width: 92%;
     }
-    .main-ticketlucky-content-box{
-        max-width: 100%;
-        transform: scale(1);
-    }
-    .popup-mision-content{
+
+    .popup-mision-content {
         transform: scale(0.96);
     }
-    .popup-inbox-content-main{
+    .popup-inbox-content-main {
         max-width: 345px;
     }
-    .row-inbox{
+    .row-inbox {
         height: 60px;
     }
-    .btn_mission_complete{
+    .btn_mission_complete {
         padding: 4px 16px;
     }
-    .main-ticketlucky-scroll{
-        max-height: 650px; 
+    .main-ticketlucky-scroll {
+        max-height: 650px;
         width: 100%;
     }
-    
 }
 @media (min-width: 540px) {
     .jaclport_package_frame {
         max-width: 100%;
         margin-bottom: 12px;
+    }
+}
+@media (max-height: 745px) {
+    .main-ticketlucky-scroll {
+        max-height: 500px;
+    }
+    .main-ticketlucky-scroll::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media (max-height: 700px) {
+    .main-ticketlucky-scroll {
+        max-height: 450px;
     }
 }
 @media (min-height: 680px) {

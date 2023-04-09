@@ -14,6 +14,7 @@
         radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%) !important;
     overflow: hidden;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
@@ -60,7 +61,7 @@
     background: rgba(255, 255, 255, 0.3);
     background-blend-mode: overlay;
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+backdrop-filter:unset;
     border-radius: 8px; */
 }
 .header .coin .box-coin .amount {
@@ -133,9 +134,11 @@
 
 /* --------------profile--------------------- */
 .profile-wrap {
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: scroll;
-    padding: 75px 0 90px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +156,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 33px 41px;
+    padding: 10px 41px;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(2px);
     border-radius: 30px;
@@ -191,12 +194,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 0px 0px;
+    padding: 8px 0px 14px;
     gap: 12px;
     max-width: 309px;
     width: 100%;
     height: 31px;
     border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     margin-top: 10px;
     font-family: "Quicksand";
     font-style: normal;
@@ -215,27 +219,51 @@
 }
 .frame-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding: 0px 0px 16px;
     gap: 12px;
     max-width: 309px;
     width: 100%;
-    height: 37px;
     border-bottom: 1px solid #ffffff;
     margin-top: 10px;
 }
+.frame-2-text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frame-2-number {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .btn-buymascot {
+    margin-right: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 148.5px;
+    max-width: 148.5px;
+    width: 100%;
     height: 21px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 10px;
     font-family: "Quicksand";
     font-style: normal;
@@ -253,11 +281,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 148.5px;
+    max-width: 148.5px;
+    width: 100%;
     height: 21px;
     background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 10px;
     font-family: "Quicksand";
     font-style: normal;
@@ -299,6 +328,9 @@
     text-transform: capitalize;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frame-3 input[type="radio"] {
+    width: fit-content;
 }
 .text-lable {
     font-family: "Quicksand";
@@ -346,7 +378,7 @@
     height: 36px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     font-family: "Quicksand";
     font-style: normal;
@@ -396,8 +428,23 @@
         transform: scale(0.75);
     } */
 }
-@media (max-height: 700px) {
+@media (max-height: 932px) {
+    .main-profile {
+        margin-top: -30px;
+    }
+}
+@media (max-height: 750px) {
     /* .main-profile {
         padding: 100px 0;
     } */
+    .main-profile {
+        transform: scale(0.9);
+        margin-top: -35px;
+    }
+}
+@media (max-height: 700px) {
+    .main-profile {
+        transform: scale(0.8);
+        margin-top: -25px;
+    }
 }

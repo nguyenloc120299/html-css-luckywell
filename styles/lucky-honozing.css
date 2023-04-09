@@ -1,170 +1,7 @@
 @import url("./global.css");
 @import url("./popup-buy-ticket.css");
-.items-center {
-    align-items: center;
-}
-.main {
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-image: url("../images/bg-ticket-lucky.png"),
-        radial-gradient(156.86% 89.06% at -8.37% 83.74%, #a50f7b 10.91%, #04003f 79.33%) !important;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.wrap-page {
-    max-width: 992px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url("./lucky-ticket.css");
 
-/* ----------------header------------------ */
-
-.header_main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding: 8px 20px 16px 36px;
-}
-.header .coin {
-    display: flex;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 57px;
-    height: 23px;
-    position: relative;
-    background: url("../images/Variant3.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-}
-.header .coin .box-coin {
-    display: flex;
-    align-items: center;
-    padding: 4px 8px 4px 24px;
-    gap: 10px;
-    /* width: 57px;
-    height: 23px;
-    background: rgba(255, 255, 255, 0.3);
-    background-blend-mode: overlay;
-    border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
-    border-radius: 8px; */
-}
-.header .coin .box-coin .amount {
-    font-family: "Quicksand", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.coin-1 {
-    position: absolute;
-    width: 23.58px;
-    height: 23.5px;
-    top: -3px;
-    transform: rotate(36deg);
-    z-index: 2;
-}
-.coin-2 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 6px;
-    transform: rotate(52.86deg);
-}
-.coin-1 img,
-.coin-2 img {
-    object-fit: cover;
-}
-.header_info {
-}
-.home {
-    width: 100%;
-    height: 100%;
-    /* background: url("../images/bg.png"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header_info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-
-    width: 112px;
-    height: 48px;
-}
-.header_info_avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 505;
-    background: url("../images/avatar.png");
-}
-.header_info_icon {
-    width: 24px;
-    height: 24px;
-}
-.img__title {
-    display: flex;
-    justify-content: center;
-}
-
-/* --------------ticket lucky--------------------- */
-.main-ticketlucky-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0;
-}
-.main-ticketlucky-content-box {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-    max-width: 360px;
-    width: 100%;
-    min-height: 600px;
-    background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border-radius: 24px;
-    z-index: 99;
-}
-.header-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 100%;
-    height: 39px;
-    border-top-left-radius: 24px;
-    overflow: hidden;
-    border-top-right-radius: 24px;
-}
 .btn-buymascot {
     display: flex;
     flex-direction: row;
@@ -174,7 +11,7 @@
     width: 120px;
     height: 39px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
@@ -197,7 +34,7 @@
     width: 120px;
     height: 39px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%) !important;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
@@ -220,7 +57,7 @@
     width: 120px;
     height: 39px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%) !important;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
     font-style: normal;
@@ -315,7 +152,7 @@
     width: 150px;
     height: 31px;
     background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     -webkit-backdrop-filter: blur(30px);
     border-radius: 8px;
     margin-top: 5px;
@@ -337,8 +174,8 @@
     position: relative;
     z-index: 9;
     background: url("../images/Flower\ \(1\).png");
-    mix-blend-mode: screen;
-    background-position: center -20px;
+    mix-blend-mode: unset !important;
+    background-position: center -3px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -351,7 +188,6 @@
     z-index: 1;
 }
 .scroll-ticket-lucky {
-    overflow-y: scroll;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,7 +204,7 @@
     width: 139px;
     height: 30px;
     background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     -webkit-backdrop-filter: blur(30px);
     border-radius: 12px;
     font-family: "Quicksand";
@@ -383,11 +219,11 @@
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .row-baner {
     width: 100%;
-    height: 160px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .banner_bottom {
     display: flex;
@@ -436,7 +272,7 @@
     padding: 20px 24px;
     gap: 12px;
     isolation: isolate;
-    max-width: 298px;
+    max-width: 315px;
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.7);
@@ -446,8 +282,8 @@
 }
 .close-popup {
     position: absolute;
-    right: -10px;
-    top: -15px;
+    right: -15px;
+    top: -20px;
     cursor: pointer;
     z-index: 99;
 }
@@ -492,6 +328,25 @@
 .list-winner::-webkit-scrollbar {
     display: none;
 }
+.title_winner_list {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 430px) {
     .total_reward_jackport_detail {
         max-width: 120px;

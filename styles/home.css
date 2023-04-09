@@ -36,7 +36,7 @@
     isolation: isolate;
     background-size: 100%;
     background-blend-mode: overlay;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     -webkit-backdrop-filter: blur(30px);
 }
 .header_main {
@@ -70,7 +70,7 @@
     background: rgba(255, 255, 255, 0.3);
     background-blend-mode: overlay;
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+backdrop-filter:unset;
     border-radius: 8px; */
 }
 .header .coin .box-coin .amount {
@@ -379,7 +379,7 @@
     background: rgba(255, 255, 255, 0.3);
     background-blend-mode: overlay;
     border: 1px solid #ffffff;
-    backdrop-filter: blur(30px);
+    backdrop-filter: unset;
     border-radius: 50px;
     background: url(../images/Variant2.png) no-repeat center;
     background-size: cover;
