@@ -35,6 +35,22 @@ body {
 .flower-effect {
     position: absolute;
 }
+.popup-effect-ticket {
+    position: fixed;
+    left: 50%;
+    top: 150px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/Flower\ \(1\).png");
+    mix-blend-mode: screen;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .popup-effect {
     position: fixed;
     left: 50%;
