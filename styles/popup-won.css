@@ -92,6 +92,16 @@
     height: 1px;
     background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
 }
+.line-goodluck {
+    width: 250px;
+    height: 1px;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+}
+.line-gameover {
+    width: 250px;
+    height: 1px;
+    background: #6b6b6b;
+}
 .content-text {
     font-family: "Inter";
     font-style: normal;

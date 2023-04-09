@@ -288,7 +288,7 @@
     z-index: 99;
 }
 .popup-winnerlist .line {
-    width: 250px;
+    width: 100%;
     height: 1px;
     background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
 }

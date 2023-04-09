@@ -170,6 +170,30 @@
 .close-popup:active .popup-daily {
   visibility: hidden;
 }
+.btn-ok {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  height: 36px;
+  background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(30px);
+  border-radius: 50px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 @media (max-width: 992px) {
   .game-main {
     transform: scale(0.8);

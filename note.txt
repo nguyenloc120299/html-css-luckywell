@@ -15,6 +15,7 @@
 15. https://html-css-luckywell.netlify.app/popup-bigwin.html
 16. https://html-css-luckywell.netlify.app/popup-buy-turn.html#buy-turn
 17. https://html-css-luckywell.netlify.app/popup-buy-turn.html#buy_turn_confirm
+18. https://html-css-luckywell.netlify.app/18.html
 19. https://html-css-luckywell.netlify.app/popup-inbox.html#popup-inbox
 20. https://html-css-luckywell.netlify.app/giftshop.html
 21. https://html-css-luckywell.netlify.app/giftshop.html#popup-receiveMB
