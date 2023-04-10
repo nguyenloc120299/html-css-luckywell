@@ -158,7 +158,7 @@ backdrop-filter:unset;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    height: 100vh;
 }
 .scroll-ticket-lucky::-webkit-scrollbar {
     display: none;
@@ -413,7 +413,7 @@ backdrop-filter:unset;
     align-items: center;
     padding: 4px 16px;
     gap: 10px;
-    width: 116.5px;
+    width: 60px;
     height: 20px;
     background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
     border: 1px solid #ffffff;
@@ -549,8 +549,6 @@ backdrop-filter:unset;
 .inbox-main-content {
     max-width: 336px;
     width: 100%;
-    height: 250px;
-    overflow-y: scroll;
 }
 .inbox-main-content::-webkit-scrollbar {
     display: none;
@@ -674,12 +672,11 @@ backdrop-filter:unset;
     height: 80px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2);
     border-radius: 8px;
     overflow: hidden;
     flex-direction: column;
     box-sizing: border-box;
+    position: relative;
 }
 .card-item-bonus {
     display: flex;
@@ -907,7 +904,6 @@ backdrop-filter:unset;
     gap: 16px;
     max-width: 360px;
     background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
-    backdrop-filter: blur(2px);
     border-radius: 24px;
 }
 .header-menu {
@@ -1124,6 +1120,7 @@ backdrop-filter:unset;
 .text-custom:first-child {
     margin-top: 0;
 }
+
 @media (max-width: 430px) {
     .total_reward_jackport_detail {
         max-width: 120px;
@@ -1160,8 +1157,35 @@ backdrop-filter:unset;
         width: 100%;
     }
 }
+.buy-turn-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 202px;
+    height: 44px;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.buy-turn-title span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 @media (min-width: 540px) {
-    .jaclport_package_frame {
+    .jackport_package_frame {
         max-width: 100%;
         margin-bottom: 12px;
     }

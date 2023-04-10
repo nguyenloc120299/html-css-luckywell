@@ -243,14 +243,12 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    /* backdrop-filter: blur(3px); */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 0.25s, opacity 0.25s;
+    visibility: visible;
+    opacity: 1;
 }
 .popup-winnerlist:target {
     visibility: visible;
@@ -321,11 +319,15 @@
     width: 30%;
 }
 .list-winner {
+    width: 100%;
+}
+.list-winner .table-content .scroll-table {
     height: 300px;
     overflow-y: scroll;
     width: 100%;
 }
-.list-winner::-webkit-scrollbar {
+.list-winner::-webkit-scrollbar,
+.scroll-table::-webkit-scrollbar {
     display: none;
 }
 .title_winner_list {
@@ -362,7 +364,7 @@
     }
 }
 @media (min-width: 540px) {
-    .jaclport_package_frame {
+    .jackport_package_frame {
         max-width: 100%;
         margin-bottom: 12px;
     }

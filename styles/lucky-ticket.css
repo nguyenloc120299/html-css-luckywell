@@ -136,8 +136,14 @@ backdrop-filter:unset;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 10px 0 50px 0; */
+    height: 100vh;
     transform: scale(0.75);
+}
+.main-ticketlucky-content.honozing {
+    transform: scale(0.72);
+}
+.main-ticketlucky-content.honozing .main-ticketlucky-content-box {
+    gap: 10px;
 }
 .main-ticketlucky-content-box {
     position: relative;
@@ -149,7 +155,6 @@ backdrop-filter:unset;
     max-width: 360px;
     width: 100%;
     background: linear-gradient(360deg, rgba(32, 2, 73, 0.9) 17.58%, rgba(144, 21, 118, 0.9) 112.42%);
-    backdrop-filter: blur(2px);
     border-radius: 24px;
     z-index: 99;
 }
@@ -378,9 +383,34 @@ backdrop-filter:unset;
 .scroll-ticket-lucky::-webkit-scrollbar {
     display: none;
 }
+.fail-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    height: 44px;
+    background: #474747;
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 @media (min-height: 700px) {
     .main-ticketlucky-content {
         transform: scale(0.83);
+    }
+    .main-ticketlucky-content.honozing {
+        transform: scale(0.78);
     }
 }
 @media (min-height: 800px) {
