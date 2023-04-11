@@ -12,6 +12,25 @@ let img2 = "url(../images/inbox_footer.png)"
 let img3 = "url(../images/giftshop_f.png)"
 let img4 = "url(../images/history_f.png)"
 let img5 = "url(../images/guide_f.png)"
+
+// document.addEventListener('touchmove', function (e) {
+//     e.preventDefault();
+// }, { passive: false });
+var myElement = document.getElementsByClassName('main');
+
+document.addEventListener('touchmove', function (e) {
+    var element = e.target;
+    if (element.scrollHeight === element.clientHeight) {
+        e.preventDefault();
+    } else if (element.scrollTop === 0) {
+        element.scrollTop = 1;
+        e.preventDefault();
+    } else if (element.scrollTop + element.clientHeight === element.scrollHeight) {
+        element.scrollTop = element.scrollHeight - element.clientHeight - 1;
+        e.preventDefault();
+    }
+}, { passive: false });
+
 if (btn)
     btn.onclick = function () {
         spiner.style.transform = "translate(-50%, -50%) rotate(" + number * 5 + "deg)";
