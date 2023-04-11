@@ -317,6 +317,7 @@
     text-align: center;
     color: #200249;
     width: 30%;
+    padding: 0 10px;
 }
 .list-winner {
     width: 100%;
@@ -325,6 +326,7 @@
     height: 300px;
     overflow-y: scroll;
     width: 100%;
+    margin: auto;
 }
 .list-winner::-webkit-scrollbar,
 .scroll-table::-webkit-scrollbar {

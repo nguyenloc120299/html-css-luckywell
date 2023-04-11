@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    transition: opacity 500ms;
 }
 .popup-reward-content {
     width: 100%;
