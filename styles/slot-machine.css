@@ -172,7 +172,7 @@ backdrop-filter:unset;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
-    width: 131px;
+    width: 129px;
     height: 35px;
     background: #fbac34;
     border: 1px solid #ffffff;
@@ -265,10 +265,10 @@ backdrop-filter:unset;
     bottom: 16px;
 }
 .total_reward_jackport .gold {
-    font-family: "Montserrat";
+    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 28px;
     line-height: 49px;
     text-transform: capitalize;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
@@ -277,10 +277,10 @@ backdrop-filter:unset;
     background-clip: text;
 }
 .total_reward_jackport .silver {
-    font-family: "Montserrat";
+    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 28px;
     line-height: 49px;
     text-transform: capitalize;
     background: linear-gradient(180deg, #d8d8d8 0%, #ffffff 100%);
@@ -289,10 +289,10 @@ backdrop-filter:unset;
     background-clip: text;
 }
 .total_reward_jackport .bronze {
-    font-family: "Montserrat";
+    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 28px;
     line-height: 49px;
     background: linear-gradient(180deg, #fbdbbc 0%, #b86819 100%);
     text-transform: capitalize;
@@ -301,11 +301,18 @@ backdrop-filter:unset;
     background-clip: text;
 }
 .jackport_package_frame .package_img {
-    width: 100px;
-    height: 145px;
+    position: absolute;
+    width: 150px;
+    height: 184px;
+    left: calc(50% - 171px / 2 - 97.5px);
+    top: calc(50% - 184px / 2 - 12px);
 }
 .jackport_package_frame .package_img2 {
-    width: 125px;
+    position: absolute;
+    width: 179px;
+    height: 184px;
+    left: calc(50% - 171px / 2 - 97.5px);
+    top: calc(50% - 184px / 2 - 12px);
 }
 .time_left_package {
     position: absolute;
@@ -358,9 +365,9 @@ backdrop-filter:unset;
     border-bottom: 2px solid #ffff;
 }
 .text-gold {
-    font-family: "Montserrat";
+    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     display: flex;
@@ -373,9 +380,9 @@ backdrop-filter:unset;
     background-clip: text;
 }
 .text-silver {
-    font-family: "Montserrat";
+    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     display: flex;
@@ -389,9 +396,9 @@ backdrop-filter:unset;
     background-clip: text;
 }
 .text-bronze {
-    font-family: "Montserrat";
+    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     display: flex;
@@ -488,7 +495,7 @@ backdrop-filter:unset;
 .point__win span {
     font-family: "Quicksand", sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 36px;
     line-height: 44px;
     display: flex;
@@ -538,7 +545,7 @@ backdrop-filter:unset;
     background: linear-gradient(36.65deg, #ffdbac 36.47%, #ffddae 38.48%, #fff1ca 63.7%, #fffcd5 78.71%);
     box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    font-family: "Montserrat";
+    font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -548,6 +555,121 @@ backdrop-filter:unset;
     text-align: center;
     text-transform: uppercase;
     color: #200249;
+}
+.btn-prize {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 170px;
+    width: 100%;
+    height: 23px;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    border-radius: 8px;
+}
+.btn-prize span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ---------------popup jackpot prize------------ */
+.popup-jackpot-prize {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.popup-jackpot-prize-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-jackpot-prize-content-main {
+    max-width: 398px;
+    width: 95%;
+    min-height: 400px;
+    background: rgba(42, 0, 49, 0.65);
+    border-radius: 30px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+.close-popup {
+    position: absolute;
+    right: -15px;
+    top: -25px;
+    cursor: pointer;
+    z-index: 99;
+}
+.bag-header {
+    position: absolute;
+    width: 171px;
+    height: 184px;
+    left: -10px;
+    top: -34px;
+}
+.title-jackpot-prize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 221px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    z-index: 10;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.title-jackpot-prize span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(311.52deg, #fdc16e 29.15%, #ffd862 45.2%, #ffea54 61.27%, #fff34d 70.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.line-popup-prize {
+    /* background: #ffffff;
+    height: 1px;
+    max-width: 335px;
+    width: 100%; */
+    margin: 30px 0;
+}
+.reward-box {
+    height: 1px;
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
 }
 @media (max-height: 900px) {
     .main-slot-machine {
