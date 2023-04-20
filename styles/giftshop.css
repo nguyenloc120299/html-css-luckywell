@@ -227,6 +227,11 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 370px;
+    overflow-y: scroll;
+}
+.card-list::-webkit-scrollbar {
+    display: none;
 }
 .card {
     width: 336px;

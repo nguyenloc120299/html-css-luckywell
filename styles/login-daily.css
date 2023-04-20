@@ -1,4 +1,5 @@
-.popup-daily {
+.popup-daily,
+.popup-scrollcall {
   position: fixed;
   left: 0;
   top: 0;
@@ -194,6 +195,86 @@
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.popup-scrollcall-content {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-scrollcall-content .close-popup {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 99;
+}
+.roll-call-text-header {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(311.52deg, #fdc16e 29.15%, #ffd862 45.2%, #ffea54 61.27%, #fff34d 70.85%);
+  border-radius: 20px;
+  width: 189px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roll-call-text-header span {
+  font-family: "Racing Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 0 0 #901576, -2px 0 0 #000, 0 2px 0 #901576, 0 -2px 0 #000, 1px 1px 0 #901576, -1px -1px 0 #901576,
+    1px -1px 0 #000, -1px 1px 0 #901576, 1px 1px 5px #000;
+}
+.day-reward {
+  position: absolute;
+  bottom: 3px;
+  left: 8px;
+}
+.day-reward .day {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.day-reward .turn {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.active-daily-rollcall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ffffff;
+  filter: drop-shadow(0px 0px 13px #ff53a5);
+  border-radius: 12px;
+}
 @media (max-width: 992px) {
   .game-main {
     transform: scale(0.8);
@@ -208,5 +289,10 @@
   }
   .lucky-well {
     transform: scale(0.7);
+  }
+}
+@media (max-height: 768px) {
+  .popup-scrollcall-content {
+    transform: scale(0.9);
   }
 }
