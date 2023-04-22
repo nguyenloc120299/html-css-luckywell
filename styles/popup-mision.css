@@ -84,6 +84,7 @@
     padding: 8px;
     gap: 4px;
     max-width: 384px;
+    width: 100%;
     min-height: 59px;
     background: rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid #ffffff;
@@ -109,11 +110,8 @@
     width: 100%;
 }
 .check-mission {
-    position: absolute;
     width: 24px;
     height: 24px;
-    right: -8px;
-    top: -8px;
     background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
     border-radius: 50%;
     display: flex;
@@ -121,8 +119,8 @@
     align-items: center;
 }
 .check-mission.unfinished {
-    border: 2px solid rgba(255, 255, 255, 1);
-    opacity: 0.8;
+    background: #474747;
+    border: 2px solid #ffffff;
 }
 .row-mission-bottom .left_content {
     display: flex;
@@ -353,7 +351,7 @@
         max-width: 345px;
     }
     .row-mision {
-        max-width: 298px;
+        max-width: 336px;
     }
     .btn_mission_complete,
     .btn_mission_unfinished {

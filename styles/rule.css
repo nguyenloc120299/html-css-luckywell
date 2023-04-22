@@ -155,10 +155,11 @@ backdrop-filter:unset;
 }
 
 .scroll-ticket-lucky {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    padding-top: 0 !important;
 }
 .scroll-ticket-lucky::-webkit-scrollbar {
     display: none;
@@ -331,6 +332,7 @@ backdrop-filter:unset;
     padding: 8px;
     gap: 4px;
     max-width: 384px;
+    width: 100%;
     min-height: 59px;
     background: rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid #ffffff;
@@ -462,7 +464,8 @@ backdrop-filter:unset;
     /* justify-content: center; */
     /* align-items: center; */
     transform: scale(0.96);
-    max-width: 338px;
+    max-width: 300px;
+    margin: auto;
 }
 .coin-assets-1 {
     position: absolute;
@@ -555,7 +558,7 @@ backdrop-filter:unset;
 }
 .row-inbox {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     padding: 8px;
     gap: 10px;
@@ -565,7 +568,20 @@ backdrop-filter:unset;
     border-radius: 10px;
     margin-bottom: 5px;
 }
+.time-notification {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .row-inbox-content {
+    width: 100%;
 }
 .row-inbox-content-title {
     font-family: "Quicksand";
@@ -709,11 +725,7 @@ backdrop-filter:unset;
     width: 160px;
     height: 48px;
 }
-.card-item-mb {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
+
 .card-item-mb-number {
     width: fit-content;
     height: 29px;
@@ -1115,12 +1127,151 @@ backdrop-filter:unset;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .text-custom {
-    margin: 25px auto 8px 10px;
+    margin: 10px auto 8px 10px;
 }
 .text-custom:first-child {
     margin-top: 0;
 }
+.tiket-lucky-item {
+    margin-bottom: 20px !important;
+}
+.row-buy-turn {
+    width: 222px;
+    height: 114.37px;
+    position: relative;
+    display: flex;
+}
+.cicle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cicle-spin img {
+    animation: rotate 4s linear infinite;
+}
+.vector_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+        15deg,
+        #fbac34 9.17%,
+        #fbb03b 20%,
+        #fdbb50 36.44%,
+        #ffce70 56.44%,
+        #ffe79a 79.04%,
+        #fff9b6 90.84%
+    );
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.vector_2 {
+    background: linear-gradient(15deg, #fdc16e 9.17%, #ffd856 40.61%, #ffe937 72.08%, #fff325 90.84%);
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vector_2 span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.buy-turn-price {
+    background: #595653;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    border-radius: 0px 0px 12px 0px;
+    width: 159px;
+    height: 90px;
+    opacity: 0.85;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.total-turn {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+    width: 89px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(318.44deg, #200249 11.09%, #901576 97.85%);
+}
+.total-turn span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.buy-turn-price .price-1 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: capitalize;
 
+    color: #ffffff;
+}
+.buy-turn-price .price-old {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: end;
+    text-decoration-line: line-through;
+    text-transform: capitalize;
+
+    color: #ffffff;
+
+    opacity: 0.5;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
 @media (max-width: 430px) {
     .total_reward_jackport_detail {
         max-width: 120px;
@@ -1143,9 +1294,7 @@ backdrop-filter:unset;
     .popup-mision-content {
         transform: scale(0.96);
     }
-    .popup-inbox-content-main {
-        max-width: 345px;
-    }
+
     .row-inbox {
         height: 60px;
     }
@@ -1168,6 +1317,7 @@ backdrop-filter:unset;
     background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
     box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    margin: auto;
 }
 .buy-turn-title span {
     font-family: "Quicksand";
@@ -1183,6 +1333,15 @@ backdrop-filter:unset;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+.check-mission {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(61.5deg, #6d68af -1.12%, #348fa3 52.91%, #9ae3c0 103.77%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-width: 540px) {
     .jackport_package_frame {

@@ -227,20 +227,19 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 370px;
-    overflow-y: scroll;
 }
 .card-list::-webkit-scrollbar {
     display: none;
 }
 .card {
     width: 336px;
-    height: 88px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     /* padding: 0px 0px 8px; */
     gap: 16px;
+    margin-bottom: 5px;
 }
 .card-item {
     box-sizing: border-box;
@@ -288,6 +287,7 @@ li {
 .card-item-mb {
     align-items: center;
     text-align: center;
+    margin-top: 5px;
 }
 .card-item-mb-number {
     width: 77px;
@@ -314,10 +314,37 @@ li {
     text-align: center;
     gap: 10px;
 }
+.card-item-point.confirm {
+    background: linear-gradient(61.5deg, #3f3895 -1.12%, #15688c 52.91%, #92e5ff 103.77%);
+}
+.card-item-point.confirm-2 {
+    background: #200249;
+}
+.card-item-point-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    align-items: center;
+    height: 100%;
+}
+.card-item-mb-number-2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
 .card-item-point-number {
     width: 49px;
     height: 15px;
-
+    display: flex;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
@@ -326,6 +353,7 @@ li {
     text-transform: capitalize;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 3px;
 }
 .card-item-content-day {
     display: flex;
@@ -339,6 +367,8 @@ li {
     flex: none;
     order: 0;
     flex-grow: 0;
+    position: absolute;
+    top: 0;
 }
 .card-item-content-day-text {
     height: 15px;
@@ -355,7 +385,19 @@ li {
     order: 0;
     flex-grow: 0;
 }
-
+.card-item-point-number-2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: line-through;
+    color: #ffffff;
+    opacity: 0.5;
+}
 /* ------------footer---------------- */
 .footer {
     width: 100%;
@@ -383,9 +425,6 @@ li {
     margin-top: 20px;
 }
 .footer_main .btn_mission {
-    width: 104px;
-    height: 40px;
-    background: #200249;
     font-family: "Quicksand";
     font-family: 900;
     border-radius: 30px;
@@ -394,6 +433,12 @@ li {
     text-align: center;
     justify-content: center;
     text-decoration: none;
+    width: 80px;
+    height: 64px;
+}
+.footer_main .btn_mission img {
+    object-fit: cover;
+    transform: scale(0.7);
 }
 .btn_mission_text {
     font-family: "Quicksand";
@@ -434,11 +479,12 @@ li {
 }
 
 /* ----------------- */
-
+.mg-bg-gift-shop {
+    margin-bottom: 5px;
+}
 .img-bg-gift-shop img {
     width: 100%;
     height: 100%;
-    transform: scale(0.9);
 }
 .text-title-giftshop {
     position: absolute;
@@ -446,12 +492,15 @@ li {
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
-    font-family: "Quicksand";
-    font-style: normal;
-    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.text-title-giftshop span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 800;
+    position: relative;
     font-size: 35px;
     line-height: 49px;
     display: flex;
@@ -461,8 +510,34 @@ li {
     background: linear-gradient(20.68deg, #6d68af -114.33%, #ee4599 -7.6%, #f5a2c6 80.08%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    -webkit-text-stroke: 2px #901576;
 }
+/* .text-title-giftshop span::after {
+    content: attr(title);
+    position: absolute;
+    background: linear-gradient(20.68deg, #6d68af -114.33%, #ee4599 -7.6%, #f5a2c6 80.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: 35px;
+    line-height: 49px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 4px lightseagreen;
+}
+.text-title-giftshop span::before {
+    color: #fff;
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 4px #fff;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: 35px;
+    line-height: 49px;
+    text-transform: uppercase;
+} */
 /* -----popup----- */
 
 .popup-receiveMB,
@@ -583,6 +658,25 @@ li {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 5px;
 }
+.shine {
+    transform: scale(1);
+    animation: slide1 1s ease-in-out infinite;
+}
+.shine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    transform: skewX(-70deg);
+    animation: slide 0.5s linear infinite;
+    z-index: 99;
+    filter: blur(10px);
+    opacity: 0.75;
+    background: #f7a5f6;
+}
+
 @media (max-width: 690px) {
     .game-main {
         width: 100%;
@@ -598,12 +692,46 @@ li {
         display: none;
     }
 }
-@media (max-height: 700px) {
+@media (max-height: 768px) {
     .img-bg-gift-shop {
         height: 130px;
+        margin-bottom: 4px;
     }
     .text-title-giftshop {
         font-size: 30px;
-        bottom: 0;
+    }
+    .gift-shop-main {
+        transform: scale(0.92);
+        margin-top: -20px;
+    }
+}
+@media (max-height: 678px) {
+    .gift-shop-main {
+        transform: scale(0.85);
+        margin-top: -5px;
+    }
+}
+@keyframes slide1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transform: skewX(-70deg);
+    }
+
+    100% {
+        opacity: 0.75;
+        left: 100%;
+        transform: skewX(-70deg);
     }
 }

@@ -63,7 +63,7 @@
     padding: 20px 24px;
     gap: 12px;
     isolation: isolate;
-    max-width: 298px;
+    max-width: 252px;
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.6);
@@ -378,6 +378,143 @@
     text-align: center;
     text-transform: uppercase;
     color: #200249;
+}
+.row-buy-turn {
+    width: 222px;
+    height: 114.37px;
+    position: relative;
+    display: flex;
+}
+.cicle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cicle-spin img {
+    animation: rotate 4s linear infinite;
+}
+.vector_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+        15deg,
+        #fbac34 9.17%,
+        #fbb03b 20%,
+        #fdbb50 36.44%,
+        #ffce70 56.44%,
+        #ffe79a 79.04%,
+        #fff9b6 90.84%
+    );
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.vector_2 {
+    background: linear-gradient(15deg, #fdc16e 9.17%, #ffd856 40.61%, #ffe937 72.08%, #fff325 90.84%);
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vector_2 span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, #200249 -7.52%, #901576 61.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.buy-turn-price {
+    background: #595653;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    border-radius: 0px 0px 12px 0px;
+    width: 159px;
+    height: 90px;
+    opacity: 0.85;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.total-turn {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+    width: 89px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(318.44deg, #200249 11.09%, #901576 97.85%);
+}
+.total-turn span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.buy-turn-price .price-1 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: capitalize;
+
+    color: #ffffff;
+}
+.buy-turn-price .price-old {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: end;
+    text-decoration-line: line-through;
+    text-transform: capitalize;
+
+    color: #ffffff;
+
+    opacity: 0.5;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 @media (max-width: 992px) {
     .game-main {
