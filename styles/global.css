@@ -74,7 +74,7 @@ body {
     mix-blend-mode: screen;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 .title-corngatulation {
     display: flex;

@@ -297,7 +297,7 @@ backdrop-filter:unset;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -43px;
+    bottom: -51px;
 }
 .spine-bot img {
     width: 255px;
@@ -307,7 +307,7 @@ backdrop-filter:unset;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -105px;
+    bottom: -118px;
 }
 .lucky-well-buy-turn {
     position: absolute;
@@ -692,6 +692,25 @@ backdrop-filter:unset;
 .car-animation {
     animation: car 2s linear 1;
 }
+.animation_shine {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.animation_shine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    transform: skewX(-70deg);
+    /* animation: slide 0.5s linear infinite; */
+    z-index: 99;
+    filter: blur(10px);
+    opacity: 0.75;
+    background: #f7a5f6;
+}
 @keyframes slide-up {
     0% {
         transform: translateY(40px) translateX(-50%);
@@ -726,7 +745,18 @@ backdrop-filter:unset;
         transform: translateX(6px);
     }
 }
+@keyframes slide {
+    0% {
+        top: 0;
+        left: 0;
+    }
 
+    100% {
+        opacity: 0.75;
+        top: 100%;
+        left: 100%;
+    }
+}
 @media (max-width: 992px) {
     .game-main {
         transform: scale(1);

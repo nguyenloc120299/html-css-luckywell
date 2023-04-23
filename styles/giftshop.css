@@ -662,19 +662,19 @@ li {
     transform: scale(1);
     animation: slide1 1s ease-in-out infinite;
 }
-.shine::before {
+.card-item::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 40px;
+    left: -100%;
+    width: 30px;
     height: 100%;
-    transform: skewX(-70deg);
-    animation: slide 0.5s linear infinite;
+    transform: skewX(-45deg);
+    animation: slide 2s linear infinite;
     z-index: 99;
-    filter: blur(10px);
-    opacity: 0.75;
-    background: #f7a5f6;
+    filter: blur(20px);
+    opacity: 0.6;
+    background: #e7e7e7;
 }
 
 @media (max-width: 690px) {
@@ -724,14 +724,9 @@ li {
 @keyframes slide {
     0% {
         top: 0;
-        left: 0;
-        opacity: 0;
-        transform: skewX(-70deg);
     }
 
     100% {
-        opacity: 0.75;
         left: 100%;
-        transform: skewX(-70deg);
     }
 }

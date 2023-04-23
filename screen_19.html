@@ -18,15 +18,19 @@
 
 <body>
     <div class="main">
+        <div class="wallpaper-below">
+            <img src="./images/wallpaper-below.png" />
+        </div>
+        <div class="wallpaper-below-coin">
+            <img src="./images/bg.png" />
+        </div>
         <div class="wrap-page">
             <!-- --------------------header------------------>
             <div class="header">
                 <div class="header_main">
                     <div class="coin">
                         <div class="box-coin">
-                            <div class="amount">
-                                300
-                            </div>
+                            <div class="amount">300</div>
                         </div>
                         <div class="coin-1">
                             <img src="./images/coin-1.svg" />
@@ -38,43 +42,42 @@
                     <div class="header_info">
                         <div class="header_info_avatar"></div>
                         <img src="./images/signout.svg" class="header_info_icon" />
-                        <a href="#logout">
-                            <img src="./images/seting.svg" class="header_info_icon" />
-                        </a>
+                        <img src="./images/seting.svg" class="header_info_icon" />
                     </div>
                 </div>
-
             </div>
 
             <!-- ------------------event-------------------->
-            <div class="event_main">
-                <div class="flex justify-between" style="padding: 0px 8px">
-                    <div class="flex flex-column">
-                        <img src="./images/lucky-ticket-btn.png" style="margin-bottom: 3px;" />
-                        <img src="./images/ticket-icon.svg" style="height: 38px;" />
-                    </div>
-                    <div>
-                        <div style="position: relative;">
-                            <img src="./images/jackbot-event.png" />
-                            <div class="text-jackpot-event">
-                                jackpot event
-                            </div>
-                        </div>
-                        <div class="event_left">
-                            <img src="./images/Car_jackpot.svg" class="event_car_jackpot" />
-                            <div class="event_time_text">
-                                2D 10h 20m
-                            </div>
-                        </div>
-                    </div>
 
+            <div class="lucky-ticket-event">
+                <div style="position: relative;">
+                    <div class="btn-lucket">
+                        Lucky ticket
+                    </div>
+                    <div style="position: absolute;z-index: -1;top: -40px; left: 0;">
+                        <img src="./images/tickets.png" />
+                    </div>
+                </div>
+
+                <div class="btn-mission">
+                    <img src="./images/btn-mission-ng.png" />
+                    <div class="text-btn-mission">
+                        Mission
+                    </div>
+                </div>
+                <div class="btn-rollcall">
+                    ROLL CALL
                 </div>
             </div>
+
             <!-- -------------------luckywel----------------------- -->
             <div class="game-main">
                 <div class="lucky-well">
                     <div class="lucky-well-buy-turn">
-                        <img src="./images/buyTurn.png" />
+                        <div style="position: relative;">
+                            <img src="./images/buyTurn.png" />
+                            <span>buy turn</span>
+                        </div>
                     </div>
                     <img src="./images/spin-bg.png" class="spin-bg" />
                     <div class="lucky-well-spin" id="spin-lucky-well">
@@ -84,69 +87,75 @@
                         <img src="./images/Bot.png" />
                     </div>
                     <div class="spine-btn" id="spineBtn">
-                        <img src="./images/spine.png" />
+                        <img src="./images/spine.png" id="img_spin" />
                     </div>
                     <div class="number-lucky-well">
-                        <img src="./images/Num.png" />
+                        <img src="./images/numLuckywell.png" />
+                        <span>02</span>
                     </div>
                     <div class="arow_lucky_well">
                         <img src="./images/arow.svg" />
                     </div>
                 </div>
-
             </div>
 
-            <!-- --------------------sns------------------------------>
-            <div class="sns">
-                <div class="list-sns">
-                    <img src="./images/fb-icon.svg" />
-                    <img src="./images/tele-icon.svg" />
-                    <img src="./images/sns3.svg" />
-                    <img src="./images/sns4.svg" />
+            <!-- ---------------------jackpot---------------- -->
+            <div class="jackpot-event">
+                <div style="position: relative;">
+                    <div class="jackpot-box">
+                    </div>
+                    <div class="car-animation">
+                        <div class="text-jackpot">
+                            Jackpot
+                        </div>
+                        <div class="jackpot-box-time">
+                            <div>
+                                <img src="./images/car.png" style="transform: scale(.75);" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-timeleft">
+                        2D 10h 20m
+                    </div>
                 </div>
             </div>
+
             <!-- -------------footer----------------------- -->
-            <div class="footer" id="footer" style="background: url(./images/inbox_footer.png);">
-                <div class=" footer_main">
+            <div class="footer" id="footer" style="background: url(../images/guide_f.png)">
+                <div class="footer_main">
                     <div class="footer_menu">
                         <div id="inbox">
-                            <img src="./images/inbox-menu.svg" />
-                            <a href="#popup-inbox" class="footer_menu_text">
-                                inbox
-                            </a>
+                            <img src="./images/jackpot-icon.svg" />
+                            <div class="footer_menu_text">Jackpot</div>
                         </div>
                     </div>
 
                     <div class="footer_menu">
                         <div id="gift_shop">
                             <img src="./images/gift-shop.svg" />
-                            <div class="footer_menu_text">
-                                gift shop
-                            </div>
+                            <div class="footer_menu_text">gift shop</div>
+                        </div>
+                    </div>
+                    <div class="btn_mission" id="mission">
+                        <div class="">
+                            <img src="./images/shop-icon.png" />
                         </div>
 
                     </div>
-                    <div class="btn_mission" id="mission">
-                        <div class="btn_mission_text">
-                            Mission
-                        </div>
-                    </div>
                     <div class="footer_menu">
                         <div id="history">
-                            <img src="./images/history.svg" />
-                            <div class="footer_menu_text">
-                                History
-                            </div>
+                            <img src="./images/guide-menu.svg" />
+                            <div class="footer_menu_text">Guide</div>
                         </div>
                     </div>
                     <div class="footer_menu">
                         <div id="guide">
-                            <img src="./images/guide-menu.svg" />
-                            <div class="footer_menu_text">
-                                Guide
-                            </div>
+                            <img src="./images/noti.svg" />
+                            <div class="footer_menu_text">Notification</div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -162,48 +171,34 @@
                 </a>
                 <div class="title-inbox">
                     <div class="text-title">
-                        <svg width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_12_1006)">
-                                <path d="M30.3884 5.4548L1.08544 7.65537L16.4244 15.666L30.3884 5.4548Z"
-                                    fill="url(#paint0_linear_12_1006)" />
-                                <path
-                                    d="M0.166664 8.32699L1.58761 27.1491L29.0568 25.0864C31.1341 24.9307 32.683 23.0087 32.5156 20.7931L31.3975 5.98196L16.5146 16.8657L0.166664 8.32699Z"
-                                    fill="url(#paint1_linear_12_1006)" />
-                                <path
-                                    d="M25.1306 5.84971C25.1118 6.10109 25.1109 6.35623 25.1306 6.61512C25.1908 7.41243 25.4344 8.15346 25.8171 8.79787L30.3884 5.4548L25.1306 5.84971Z"
-                                    fill="#292949" />
-                                <path
-                                    d="M30.5445 11.2592C30.9733 11.2273 31.3862 11.142 31.7764 11.0116L31.3965 5.98196L26.4237 9.61863C27.4346 10.7292 28.9298 11.3802 30.5445 11.2592Z"
-                                    fill="#292949" />
-                                <path
-                                    d="M34.9332 9.08139C36.9054 7.1143 36.9054 3.92501 34.9332 1.95791C32.9611 -0.00918089 29.7637 -0.0091824 27.7916 1.95791C25.8195 3.92501 25.8195 7.1143 27.7916 9.08139C29.7637 11.0485 32.9611 11.0485 34.9332 9.08139Z"
-                                    fill="url(#paint2_linear_12_1006)" />
-                            </g>
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.1152 19.5539C25.8531 18.906 26.1152 13.1102 26.1152 13.1102C26.1152 13.1102 25.899 1.89551 15.4999 1.89551C14.6651 1.89551 13.8958 1.96807 13.1881 2.10153C21.3449 3.602 21.5284 13.1179 21.5284 13.1179C21.5284 13.1179 21.2663 18.9138 21.5284 19.5617C21.7905 20.2095 23.2321 21.1166 23.2321 22.801C23.2321 24.203 21.9635 24.4324 21.5362 24.4699H25.9842C25.9842 24.4699 27.8189 24.4777 27.8189 22.7933C27.8189 21.1088 26.3773 20.2018 26.1152 19.5539Z"
+                                fill="#C7A140" />
+                            <path
+                                d="M23.2321 22.8011C23.2321 21.1166 21.7905 20.2096 21.5284 19.5617C21.2663 18.9138 21.5284 13.118 21.5284 13.118C21.5284 13.118 21.3449 3.60203 13.1882 2.10156C5.06808 3.62536 4.88461 13.1102 4.88461 13.1102C4.88461 13.1102 5.14671 18.9061 4.88461 19.5539C4.6225 20.2018 3.18091 21.1088 3.18091 22.7933C3.18091 24.4778 5.01566 24.47 5.01566 24.47H21.5363C21.9635 24.4324 23.2321 24.2031 23.2321 22.8011Z"
+                                fill="url(#paint0_linear_152_16873)" />
+                            <path
+                                d="M18.1625 25.4697C17.1976 25.4697 14.4406 25.4697 13.4756 25.4697C12.5107 25.4697 12.6485 26.5285 13.6328 27.4815C14.617 28.4344 15.8191 28.4697 15.8191 28.4697C15.8191 28.4697 17.0211 28.4344 18.0054 27.4815C18.9896 26.5285 19.1275 25.4697 18.1625 25.4697Z"
+                                fill="url(#paint1_linear_152_16873)" />
                             <defs>
-                                <linearGradient id="paint0_linear_12_1006" x1="1.08583" y1="10.5603" x2="30.3884"
-                                    y2="10.5603" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FCDF4F" />
-                                    <stop offset="1" stop-color="#F5A2C6" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_12_1006" x1="0.167098" y1="16.5654" x2="32.5279"
-                                    y2="16.5654" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FCDF4F" />
-                                    <stop offset="1" stop-color="#F5A2C6" />
-                                </linearGradient>
-                                <linearGradient id="paint2_linear_12_1006" x1="32.7034" y1="12.886" x2="35.2016"
-                                    y2="-0.908378" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint0_linear_152_16873" x1="4.72154" y1="26.9513" x2="29.2173"
+                                    y2="11.7415" gradientUnits="userSpaceOnUse">
                                     <stop offset="8e-08" stop-color="#FDC16E" />
                                     <stop offset="0.385" stop-color="#FFD862" />
                                     <stop offset="0.7703" stop-color="#FFEA54" />
                                     <stop offset="1" stop-color="#FFF34D" />
                                 </linearGradient>
-                                <clipPath id="clip0_12_1006">
-                                    <rect width="36.6667" height="30" fill="white"
-                                        transform="translate(0.166664 0.482422)" />
-                                </clipPath>
+                                <linearGradient id="paint1_linear_152_16873" x1="13.2801" y1="28.8025" x2="16.7591"
+                                    y2="23.9829" gradientUnits="userSpaceOnUse">
+                                    <stop offset="8e-08" stop-color="#FDC16E" />
+                                    <stop offset="0.385" stop-color="#FFD862" />
+                                    <stop offset="0.7703" stop-color="#FFEA54" />
+                                    <stop offset="1" stop-color="#FFF34D" />
+                                </linearGradient>
                             </defs>
                         </svg>
-                        Inbox
+                        Notification
                     </div>
                 </div>
                 <div class="inbox-main-content">
@@ -212,9 +207,9 @@
                             <img src="./images/icon_inbox.svg" />
                         </div>
                         <div class="row-inbox-content">
-                            <div class="row-inbox-content-title flex justify-between">
-                                <span>Login reward</span>
-                                <span style="font-size: 12px;">
+                            <div class=" flex justify-between">
+                                <span class="row-inbox-content-title">Login reward</span>
+                                <span class="time-noti">
                                     20:15 10/04/2023
                                 </span>
                             </div>
@@ -228,9 +223,9 @@
                             <img src="./images/icon_inbox.svg" />
                         </div>
                         <div class="row-inbox-content">
-                            <div class="row-inbox-content-title flex justify-between">
-                                <span>Spread reward</span>
-                                <span style="font-size: 12px;">
+                            <div class=" flex justify-between">
+                                <span class="row-inbox-content-title">Spread reward</span>
+                                <span class="time-noti">
                                     20:15 10/04/2023
                                 </span>
                             </div>
@@ -244,9 +239,25 @@
                             <img src="./images/icon_inbox.svg" />
                         </div>
                         <div class="row-inbox-content">
-                            <div class="row-inbox-content-title flex justify-between">
-                                <span>Spread reward</span>
-                                <span style="font-size: 12px;">
+                            <div class="flex justify-between">
+                                <span class="row-inbox-content-title">Spread reward</span>
+                                <span class="time-noti">
+                                    20:15 10/04/2023
+                                </span>
+                            </div>
+                            <div class="row-inbox-content-text">
+                                You have received 2 spins for inviting 10 friends to sign up for Lucky Draw service
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-inbox">
+                        <div>
+                            <img src="./images/icon_inbox.svg" />
+                        </div>
+                        <div class="row-inbox-content">
+                            <div class="flex justify-between">
+                                <span class="row-inbox-content-title">Spread reward</span>
+                                <span class="time-noti">
                                     20:15 10/04/2023
                                 </span>
                             </div>
@@ -261,9 +272,25 @@
                             <img src="./images/icon_inbox.svg" />
                         </div>
                         <div class="row-inbox-content">
-                            <div class="row-inbox-content-title flex justify-between">
-                                <span>Spread reward</span>
-                                <span style="font-size: 12px;">
+                            <div class="flex justify-between">
+                                <span class="row-inbox-content-title">Spread reward</span>
+                                <span class="time-noti">
+                                    20:15 10/04/2023
+                                </span>
+                            </div>
+                            <div class="row-inbox-content-text">
+                                You have received 3 spins for participating in the game “shoot fish”
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-inbox">
+                        <div>
+                            <img src="./images/icon_inbox.svg" />
+                        </div>
+                        <div class="row-inbox-content">
+                            <div class="flex justify-between">
+                                <span class="row-inbox-content-title">Spread reward</span>
+                                <span class="time-noti">
                                     20:15 10/04/2023
                                 </span>
                             </div>
@@ -278,43 +305,9 @@
                             <img src="./images/icon_inbox.svg" />
                         </div>
                         <div class="row-inbox-content">
-                            <div class="row-inbox-content-title flex justify-between">
-                                <span>Spread reward</span>
-                                <span style="font-size: 12px;">
-                                    20:15 10/04/2023
-                                </span>
-                            </div>
-                            <div class="row-inbox-content-text">
-                                You have received 1 spin for the settlement of a transaction with a value less than or
-                                equal to 5,000MMK
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-inbox">
-                        <div>
-                            <img src="./images/icon_inbox.svg" />
-                        </div>
-                        <div class="row-inbox-content">
-                            <div class="row-inbox-content-title flex justify-between">
-                                <span>Spread reward</span>
-                                <span style="font-size: 12px;">
-                                    20:15 10/04/2023
-                                </span>
-                            </div>
-                            <div class="row-inbox-content-text">
-                                You have received 1 spin for the settlement of a transaction with a value less than or
-                                equal to 5,000MMK
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-inbox">
-                        <div>
-                            <img src="./images/icon_inbox.svg" />
-                        </div>
-                        <div class="row-inbox-content">
-                            <div class="row-inbox-content-title flex justify-between">
-                                <span>Spread reward</span>
-                                <span style="font-size: 12px;">
+                            <div class=" flex justify-between">
+                                <span class="row-inbox-content-title">Spread reward</span>
+                                <span class="time-noti">
                                     20:15 10/04/2023
                                 </span>
                             </div>

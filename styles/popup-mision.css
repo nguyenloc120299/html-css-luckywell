@@ -91,8 +91,25 @@
     border-radius: 10px;
     margin-bottom: 3px;
     position: relative;
+    overflow: hidden;
 }
-
+.shine {
+    position: relative;
+}
+.shine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50px;
+    height: 100%;
+    transform: skewX(-58deg);
+    animation: slide 3.5s linear infinite;
+    z-index: 99;
+    filter: blur(25px);
+    opacity: 0.25;
+    background: #ffff;
+}
 .title-text-mission {
     font-family: "Quicksand";
     font-style: normal;
@@ -356,5 +373,15 @@
     .btn_mission_complete,
     .btn_mission_unfinished {
         width: 75px;
+    }
+}
+@keyframes slide {
+    0% {
+        top: 0;
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
     }
 }

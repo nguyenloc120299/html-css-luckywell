@@ -18,15 +18,19 @@
 
 <body>
     <div class="main">
+        <div class="wallpaper-below">
+            <img src="./images/wallpaper-below.png" />
+        </div>
+        <div class="wallpaper-below-coin">
+            <img src="./images/bg.png" />
+        </div>
         <div class="wrap-page">
             <!-- --------------------header------------------>
             <div class="header">
                 <div class="header_main">
                     <div class="coin">
                         <div class="box-coin">
-                            <div class="amount">
-                                300
-                            </div>
+                            <div class="amount">300</div>
                         </div>
                         <div class="coin-1">
                             <img src="./images/coin-1.svg" />
@@ -38,38 +42,34 @@
                     <div class="header_info">
                         <div class="header_info_avatar"></div>
                         <img src="./images/signout.svg" class="header_info_icon" />
-                        <a href="#logout">
-                            <img src="./images/seting.svg" class="header_info_icon" />
-                        </a>
+                        <img src="./images/seting.svg" class="header_info_icon" />
                     </div>
                 </div>
-
             </div>
 
             <!-- ------------------event-------------------->
-            <div class="event_main">
-                <div class="flex justify-between" style="padding: 0px 8px">
-                    <div class="flex flex-column">
-                        <img src="./images/lucky-ticket-btn.png" style="margin-bottom: 3px;" />
-                        <img src="./images/ticket-icon.svg" style="height: 38px;" />
-                    </div>
-                    <div>
-                        <div style="position: relative;">
-                            <img src="./images/jackbot-event.png" />
-                            <div class="text-jackpot-event">
-                                jackpot event
-                            </div>
-                        </div>
-                        <div class="event_left">
-                            <img src="./images/Car_jackpot.svg" class="event_car_jackpot" />
-                            <div class="event_time_text">
-                                2D 10h 20m
-                            </div>
-                        </div>
-                    </div>
 
+            <div class="lucky-ticket-event">
+                <div style="position: relative;">
+                    <div class="btn-lucket">
+                        Lucky ticket
+                    </div>
+                    <div style="position: absolute;z-index: -1;top: -40px; left: 0;">
+                        <img src="./images/tickets.png" />
+                    </div>
+                </div>
+
+                <div class="btn-mission">
+                    <img src="./images/btn-mission-ng.png" />
+                    <div class="text-btn-mission">
+                        Mission
+                    </div>
+                </div>
+                <div class="btn-rollcall">
+                    ROLL CALL
                 </div>
             </div>
+
             <!-- -------------------luckywel----------------------- -->
             <div class="game-main">
                 <div class="lucky-well">
@@ -87,69 +87,75 @@
                         <img src="./images/Bot.png" />
                     </div>
                     <div class="spine-btn" id="spineBtn">
-                        <img src="./images/spine.png" />
+                        <img src="./images/spine.png" id="img_spin" />
                     </div>
                     <div class="number-lucky-well">
-                        <img src="./images/Num.png" />
+                        <img src="./images/numLuckywell.png" />
+                        <span>02</span>
                     </div>
                     <div class="arow_lucky_well">
                         <img src="./images/arow.svg" />
                     </div>
                 </div>
-
             </div>
 
-            <!-- --------------------sns------------------------------>
-            <div class="sns">
-                <div class="list-sns">
-                    <img src="./images/fb-icon.svg" />
-                    <img src="./images/tele-icon.svg" />
-                    <img src="./images/sns3.svg" />
-                    <img src="./images/sns4.svg" />
+            <!-- ---------------------jackpot---------------- -->
+            <div class="jackpot-event">
+                <div style="position: relative;">
+                    <div class="jackpot-box">
+                    </div>
+                    <div class="car-animation">
+                        <div class="text-jackpot">
+                            Jackpot
+                        </div>
+                        <div class="jackpot-box-time">
+                            <div>
+                                <img src="./images/car.png" style="transform: scale(.75);" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-timeleft">
+                        2D 10h 20m
+                    </div>
                 </div>
             </div>
+
             <!-- -------------footer----------------------- -->
             <div class="footer" id="footer">
-                <div class=" footer_main">
+                <div class="footer_main">
                     <div class="footer_menu">
                         <div id="inbox">
-                            <img src="./images/inbox-menu.svg" />
-                            <div class="footer_menu_text">
-                                inbox
-                            </div>
+                            <img src="./images/jackpot-icon.svg" />
+                            <div class="footer_menu_text">Jackpot</div>
                         </div>
                     </div>
 
                     <div class="footer_menu">
                         <div id="gift_shop">
                             <img src="./images/gift-shop.svg" />
-                            <div class="footer_menu_text">
-                                gift shop
-                            </div>
+                            <div class="footer_menu_text">gift shop</div>
+                        </div>
+                    </div>
+                    <div class="btn_mission" id="mission">
+                        <div class="">
+                            <img src="./images/shop-icon.png" />
                         </div>
 
                     </div>
-                    <div class="btn_mission" id="mission">
-                        <div class="btn_mission_text">
-                            Mission
-                        </div>
-                    </div>
                     <div class="footer_menu">
                         <div id="history">
-                            <img src="./images/history.svg" />
-                            <div class="footer_menu_text">
-                                History
-                            </div>
+                            <img src="./images/guide-menu.svg" />
+                            <div class="footer_menu_text">Guide</div>
                         </div>
                     </div>
                     <div class="footer_menu">
                         <div id="guide">
-                            <img src="./images/guide-menu.svg" />
-                            <div class="footer_menu_text">
-                                Guide
-                            </div>
+                            <img src="./images/noti.svg" />
+                            <div class="footer_menu_text">Notification</div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

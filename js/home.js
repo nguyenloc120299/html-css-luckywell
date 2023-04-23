@@ -71,24 +71,24 @@ guide.onclick = function () {
 }
 
 
-let delay = 0; // thời gian độ trễ giữa mỗi thẻ (1000ms = 1s)
-let index = 0;
-let animationDuration = 500; // thời gian animation (3000ms = 3s)
+// let delay = 0; // thời gian độ trễ giữa mỗi thẻ (1000ms = 1s)
+// let index = 0;
+// let animationDuration = 500; // thời gian animation (3000ms = 3s)
 
-function animateCard() {
-    cards[index].classList.add('shine');
-    cards1[index].classList.add('shine');
-    setTimeout(() => {
-        cards[index].classList.remove('shine');
-        cards1[index].classList.remove('shine');
-        index++;
-        if (index === cards.length) {
-            index = 0;
-        }
-        setTimeout(() => {
-            animateCard();
-        }, delay);
-    }, animationDuration);
-}
+// function animateCard() {
+//     cards[index].classList.add('shine');
+//     cards1[index].classList.add('shine');
+//     setTimeout(() => {
+//         cards[index].classList.remove('shine');
+//         cards1[index].classList.remove('shine');
+//         index++;
+//         if (index === cards.length) {
+//             index = 0;
+//         }
+//         setTimeout(() => {
+//             animateCard();
+//         }, delay);
+//     }, animationDuration);
+// }
 
-animateCard();
+// animateCard();
