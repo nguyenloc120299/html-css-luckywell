@@ -73,7 +73,7 @@ backdrop-filter:unset;
     border-radius: 8px; */
 }
 .header .coin .box-coin .amount {
-    font-family: "Inter";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -146,7 +146,7 @@ backdrop-filter:unset;
 .title-gift-shop-text {
     width: 229px;
     height: 49px;
-    font-family: "Montserrat";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
@@ -265,7 +265,7 @@ li {
 .card-item-bonus-number {
     width: 34px;
     height: 15px;
-    font-family: "Inter";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -289,7 +289,7 @@ li {
     width: 77px;
     height: 29px;
 
-    font-family: "Inter";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -303,18 +303,20 @@ li {
 .card-item-point {
     position: absolute;
     left: 0px;
-    top: 60px;
+    top: 55px;
     width: 160px;
-    height: 20px;
+    height: 25px;
     background: linear-gradient(89.02deg, #200249 46.01%, #901576 98.6%);
     text-align: center;
     gap: 10px;
+    box-shadow: 0 0 3px #3333;
+    border-radius: 8px;
 }
 .card-item-point-number {
     width: 49px;
     height: 15px;
 
-    font-family: "Inter";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -337,7 +339,7 @@ li {
 }
 .card-item-content-day-text {
     height: 15px;
-    font-family: "Inter";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -381,7 +383,7 @@ li {
     width: 104px;
     height: 40px;
     background: #200249;
-    font-family: "Montserrat";
+font-family: "Quicksand", sans-serif;
     font-family: 900;
     border-radius: 30px;
     display: flex;
@@ -391,9 +393,9 @@ li {
     text-decoration: none;
 }
 .btn_mission_text {
-    font-family: "Montserrat";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -441,7 +443,7 @@ li {
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
-    font-family: "Montserrat";
+font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 800;
     display: flex;

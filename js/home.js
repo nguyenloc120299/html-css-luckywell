@@ -13,20 +13,9 @@ let img3 = "url(../images/giftshop_f.png)"
 let img4 = "url(../images/history_f.png)"
 let img5 = "url(../images/guide_f.png)"
 
-// document.addEventListener('touchmove', function (e) {
-//     e.preventDefault();
-// }, { passive: false });
-var myElement = document.getElementsByClassName('main');
-
 document.addEventListener('touchmove', function (e) {
-    var element = e.target;
-    if (element.scrollHeight === element.clientHeight) {
-        e.preventDefault();
-    } else if (element.scrollTop === 0) {
-        element.scrollTop = 1;
-        e.preventDefault();
-    } else if (element.scrollTop + element.clientHeight === element.scrollHeight) {
-        element.scrollTop = element.scrollHeight - element.clientHeight - 1;
+    var content = e.target;
+    if (content.scrollTop + content.clientHeight > content.scrollHeight) {
         e.preventDefault();
     }
 }, { passive: false });
