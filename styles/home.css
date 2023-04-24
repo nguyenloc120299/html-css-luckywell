@@ -268,7 +268,7 @@ backdrop-filter:unset;
 }
 .lucky-well {
     position: relative;
-    height: 375px;
+    max-height: 375px;
     max-width: 375px;
     width: 100%;
 }
@@ -551,8 +551,8 @@ backdrop-filter:unset;
 }
 .lucky-ticket-event {
     position: absolute;
-    top: 148px;
-    left: 8px;
+    top: 112px;
+    left: -4px;
     z-index: 10;
 }
 .lucky-ticket-event .btn-lucket {
@@ -578,11 +578,28 @@ backdrop-filter:unset;
     color: #200249;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.btn-lucket::before,
+.btn-mission::before,
+.btn-rollcall::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 100%;
+    background: #ffff;
+    transform: skew(-45deg);
+    left: 0;
+    top: 0;
+    filter: blur(10px);
+    animation: shine-btn 3.5s linear infinite;
 }
 .btn-mission {
     position: relative;
     border-radius: 50px;
     margin-bottom: 5px;
+    overflow: hidden;
 }
 .text-btn-mission {
     display: flex;
@@ -607,6 +624,8 @@ backdrop-filter:unset;
     height: 100%;
 }
 .btn-rollcall {
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -631,9 +650,10 @@ backdrop-filter:unset;
 
 .jackpot-event {
     position: absolute;
-    left: 0;
+    left: -20px;
     bottom: 240px;
     width: 200px;
+    transform: scale(0.8);
 }
 .jackpot-box {
     position: absolute;
@@ -770,6 +790,13 @@ backdrop-filter:unset;
         transform: scale(0.8);
     }
 }
+@media (max-width: 340px) {
+    .lucky-well-spin {
+        max-height: 295px;
+        max-width: 270px;
+        height: unset;
+    }
+}
 @media (min-width: 678px) {
     /* .main {
         background-image: url("../images/bg-ipad-mini.png"),
@@ -779,5 +806,13 @@ backdrop-filter:unset;
 @media (min-height: 750px) {
     .jackpot-event {
         bottom: 200px;
+    }
+}
+@keyframes shine-btn {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
     }
 }

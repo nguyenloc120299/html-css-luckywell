@@ -317,6 +317,25 @@
     width: 15px;
     color: #fff;
 }
+.shine_cat {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.shine_cat::before {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    width: 13px;
+    height: 13px;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-40deg);
+    filter: blur(5px);
+    opacity: 0;
+    top: 0;
+    animation: shine_cat 4s linear infinite;
+}
 @media (max-width: 430px) {
     .total_reward_jackport_detail {
         max-width: 120px;
@@ -340,5 +359,19 @@
 @media (max-height: 700px) {
     .main-ticketlucky-content {
         transform: scale(0.8);
+    }
+}
+@keyframes shine_cat {
+    0% {
+        opacity: 0;
+        top: 10%;
+    }
+    50% {
+        opacity: 0.9;
+        top: 35%;
+    }
+    100% {
+        opacity: 0;
+        top: 70%;
     }
 }

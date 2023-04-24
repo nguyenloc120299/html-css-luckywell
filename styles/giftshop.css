@@ -287,7 +287,7 @@ li {
 .card-item-mb {
     align-items: center;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 17px;
 }
 .card-item-mb-number {
     width: 77px;
@@ -296,7 +296,7 @@ li {
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     -webkit-background-clip: text;
@@ -318,7 +318,7 @@ li {
     background: linear-gradient(61.5deg, #3f3895 -1.12%, #15688c 52.91%, #92e5ff 103.77%);
 }
 .card-item-point.confirm-2 {
-    background: #200249;
+    background: linear-gradient(25.02deg, #200249 70.01%, #901576 100%);
 }
 .card-item-point-row {
     display: flex;
@@ -338,6 +338,7 @@ li {
     align-items: center;
     text-align: center;
     text-transform: capitalize;
+    justify-content: center;
     color: #ffffff;
 }
 
@@ -707,7 +708,7 @@ li {
 }
 @media (max-height: 678px) {
     .gift-shop-main {
-        transform: scale(0.85);
+        transform: scale(0.8);
         margin-top: -5px;
     }
 }
