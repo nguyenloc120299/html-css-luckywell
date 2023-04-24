@@ -525,6 +525,33 @@ backdrop-filter:unset;
     opacity: 0.5;
     justify-content: end;
 }
+.shine-cat{
+    position: relative;
+    overflow: hidden;
+}
+/* .shine-cat::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 15px;
+    height: 46px;
+    transform: skewX(-70deg) translateY(-50%);
+    animation: shine_cat 5s linear infinite;
+    z-index: 99;
+    filter: blur(10px);
+    opacity: 0.9;
+    background: rgb(224, 212, 227);
+}
+@keyframes shine_cat {
+    0% {
+        top:0;
+    }
+
+    100% {
+      top: 40px;
+    }
+} */
 @media (min-height: 700px) {
     .main-ticketlucky-content {
         transform: scale(0.83);

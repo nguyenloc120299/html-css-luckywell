@@ -149,11 +149,12 @@
     align-items: center;
     gap: 5px;
 }
+
 .left_content span {
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 15px;
     display: flex;
     align-items: center;
@@ -162,7 +163,8 @@
     color: #200249;
 }
 .left_content img {
-    width: 40px;
+    width: 64px;
+    height: 64px;
     object-fit: cover;
 }
 .btn_mission_detail {
