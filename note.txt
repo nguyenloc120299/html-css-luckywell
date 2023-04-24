@@ -15,4 +15,3 @@
 5.v
 
 1. Em bỏ nút Buy turn (nút Shop ở menu chính là buy turn rồi em nhé). 3 nút "lucky ticket", Mission, Roll call em để hiệu ứng gương nhé. Màn này em cắt cẩn thận với các màn điện thoại khác nhau nhé. Chị xem 2 màn Galaxy S với iPhone SE các icon bị tràn lên vòng quay.
-Em thêm hiệu ứng đèn sáng nhấp nháy ở vòng quay và quanh chữ Spin.

@@ -137,11 +137,11 @@ backdrop-filter:unset;
     width: 100%;
     z-index: 99;
 }
-.effect-title img {
+/* .effect-title img {
     width: 179px;
     height: 139px;
     z-index: 99;
-}
+} */
 .text-bigwin {
     font-family: "Quicksand";
     font-style: normal;
@@ -970,9 +970,16 @@ backdrop-filter:unset;
 }
 .light-animation {
     position: absolute;
-    top: 10px;
-    right: 60px;
-    animation: cicle 5s linear infinite;
+    top: 42%;
+    left: 64%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 100%;
+    height: 100%;
+}
+.light-animation img {
+    animation: cicle 7s linear infinite;
+    width: 100%;
+    height: 100%;
 }
 .animation-package-1,
 .animation-package-2 {
@@ -1007,6 +1014,29 @@ backdrop-filter:unset;
 .animation-package-2.broze-color::after {
     background: rgb(255, 85, 62);
 }
+.light-4 {
+    position: absolute;
+    height: 12px !important;
+    width: 100% !important;
+    top: 69px;
+    left: 31px;
+    z-index: -1;
+}
+.light-5 {
+    position: absolute;
+    height: 12px !important;
+    width: 100% !important;
+    top: 70px;
+    left: 31px;
+    z-index: -1;
+}
+.light-test {
+    top: 70px !important;
+}
+.light-test img {
+    width: 100%;
+    height: 100%;
+}
 @keyframes package-animation {
     0% {
         opacity: 0;
@@ -1019,11 +1049,15 @@ backdrop-filter:unset;
     }
 }
 @keyframes cicle {
-    from {
+    0% {
         transform: rotate(0);
         opacity: 1;
     }
-    to {
+    50% {
+        transform: rotate(-180deg);
+        opacity: 0.1;
+    }
+    100% {
         transform: rotate(-360deg);
         opacity: 0;
     }
@@ -1088,6 +1122,12 @@ backdrop-filter:unset;
     .jackport_package_frame {
         margin-top: -35px;
         margin-bottom: 2px;
+    }
+}
+@media (min-height: 800px) {
+    .light-4,
+    .light-5 {
+        top: 92px;
     }
 }
 
