@@ -697,11 +697,14 @@ backdrop-filter:unset;
 .jackpot-box-time div::after {
     content: "";
     position: absolute;
-    background: url("../images/smoke.png");
+    background: url(../images/smoke.png);
     width: 40px;
+    background-repeat: no-repeat;
     height: 40px;
     top: 20px;
     animation: smoke-car 1s ease-in infinite;
+    background-position: center;
+    background-size: cover;
 }
 
 .text-timeleft {
