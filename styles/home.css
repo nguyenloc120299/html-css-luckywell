@@ -552,7 +552,7 @@ backdrop-filter:unset;
 .lucky-ticket-event {
     position: absolute;
     top: 112px;
-    left: -4px;
+    left: 5px;
     z-index: 10;
 }
 .lucky-ticket-event .btn-lucket {

@@ -276,7 +276,7 @@ backdrop-filter:unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 35px;
     line-height: 49px;
     text-transform: capitalize;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
@@ -288,7 +288,7 @@ backdrop-filter:unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 35px;
     line-height: 49px;
     text-transform: capitalize;
     background: linear-gradient(180deg, #d8d8d8 0%, #ffffff 100%);
@@ -300,7 +300,7 @@ backdrop-filter:unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 35px;
     line-height: 49px;
     background: linear-gradient(180deg, #fbdbbc 0%, #b86819 100%);
     text-transform: capitalize;
@@ -579,6 +579,17 @@ backdrop-filter:unset;
     height: 23px;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.btn-prize::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+
 }
 .btn-prize span {
     font-family: "Quicksand";
@@ -1037,6 +1048,13 @@ backdrop-filter:unset;
     width: 100%;
     height: 100%;
 }
+.row-list-live{
+    height: 450px;
+    overflow: scroll;
+}
+.row-list-live::-webkit-scrollbar{
+    display: none;
+}
 @keyframes package-animation {
     0% {
         opacity: 0;
@@ -1098,7 +1116,7 @@ backdrop-filter:unset;
     }
 
     .main-slot-machine {
-        transform: scale(0.85);
+        transform: scale(0.82);
     }
     .jackport_package_frame {
         transform: scale(0.9);

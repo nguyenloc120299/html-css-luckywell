@@ -227,6 +227,8 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: calc(100vh - 320px);
+    overflow-y: scroll;
 }
 .card-list::-webkit-scrollbar {
     display: none;
@@ -318,7 +320,7 @@ li {
     background: linear-gradient(61.5deg, #3f3895 -1.12%, #15688c 52.91%, #92e5ff 103.77%);
 }
 .card-item-point.confirm-2 {
-    background: linear-gradient(25.02deg, #200249 70.01%, #901576 100%);
+    background: linear-gradient(311.52deg, #fdc16e 29.15%, #edc54e 45.2%, #b5a321 61.27%, #a69d18 70.85%);
 }
 .card-item-point-row {
     display: flex;
@@ -701,14 +703,10 @@ li {
     .text-title-giftshop {
         font-size: 30px;
     }
-    .gift-shop-main {
-        transform: scale(0.92);
-        margin-top: -20px;
-    }
 }
 @media (max-height: 678px) {
     .gift-shop-main {
-        transform: scale(0.8);
+        /* transform: scale(0.8); */
         margin-top: -5px;
     }
 }

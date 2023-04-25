@@ -16,6 +16,12 @@
 
 <body>
   <div class="main">
+    <div class="wallpaper-below">
+      <img src="./images/wallpaper-below.png" />
+    </div>
+    <div class="wallpaper-below-coin">
+      <img src="./images/bg.png" />
+    </div>
     <div class="wrap-page">
       <!-- --------------------header------------------>
       <div class="header">
@@ -40,39 +46,37 @@
       </div>
 
       <!-- ------------------event-------------------->
-      <div class="event_main">
-        <div class="flex justify-between" style="padding: 0px 8px">
-          <div class="flex flex-column">
-            <div style="position: relative;">
-              <img src="./images/lucky-ticket-btn.png" style="margin-bottom: 3px" />
-              <div class="text-lucky-ticket">
-                Lucky ticket
-              </div>
+
+      <div class="lucky-ticket-event">
+        <div style="position: relative;">
+          <a href="/screen_23_new.html">
+            <div class="btn-lucket">
+              Lucky ticket
             </div>
-            <img src="./images/ticket-icon.svg" style="height: 38px" />
-          </div>
-          <div>
-            <div style="position: relative;">
-              <img src="./images/jackbot-event.png" />
-              <div class="text-jackpot-event">
-                jackpot event
-              </div>
+            <div style="position: absolute;z-index: -1;top: -40px; left: 0;">
+              <img src="./images/tickets.png" />
             </div>
-            <div class="event_left">
-              <img src="./images/Car_jackpot.svg" class="event_car_jackpot" />
-              <div class="event_time_text">2D 10h 20m</div>
-            </div>
-          </div>
         </div>
+        </a>
+        <a href="/screen_11.html">
+          <div class="btn-mission">
+            <img src="./images/btn-mission-ng.png" />
+            <div class="text-btn-mission">
+              Mission
+            </div>
+          </div>
+        </a>
+        <a href="/rollcall.html">
+          <div class="btn-rollcall">
+            ROLL CALL
+          </div>
+        </a>
       </div>
+
       <!-- -------------------luckywel----------------------- -->
       <div class="game-main">
         <div class="lucky-well">
           <div class="lucky-well-buy-turn">
-            <div style="position: relative;">
-              <img src="./images/buyTurn.png" />
-              <span>buy turn</span>
-            </div>
           </div>
           <img src="./images/spin-bg.png" class="spin-bg" />
           <div class="lucky-well-spin" id="spin-lucky-well">
@@ -82,7 +86,7 @@
             <img src="./images/Bot.png" />
           </div>
           <div class="spine-btn" id="spineBtn">
-            <img src="./images/spine.png" />
+            <img src="./images/spine.png" id="img_spin" />
           </div>
           <div class="number-lucky-well">
             <img src="./images/numLuckywell.png" />
@@ -94,15 +98,74 @@
         </div>
       </div>
 
-      <!-- --------------------sns------------------------------>
-      <div class="sns">
-        <div class="list-sns">
-          <img src="./images/fb-icon.svg" />
-          <img src="./images/tele-icon.svg" />
-          <img src="./images/sns3.svg" />
-          <img src="./images/sns4.svg" />
+      <!-- ---------------------jackpot---------------- -->
+      <div class="jackpot-event">
+        <div style="position: relative;">
+          <div class="jackpot-box">
+          </div>
+          <div class="car-animation">
+            <div class="text-jackpot">
+              Jackpot
+            </div>
+            <div class="jackpot-box-time">
+              <div>
+                <img src="./images/car.png" style="transform: scale(.75);" />
+
+              </div>
+            </div>
+          </div>
+          <div class="text-timeleft">
+            2D 10h 20m
+          </div>
         </div>
       </div>
+
+      <!-- -------------footer----------------------- -->
+      <div class="footer" id="footer">
+        <div class="footer_main">
+          <a href="/screen_13.html">
+            <div class="footer_menu">
+              <div id="inbox">
+                <img src="./images/jackpot-icon.svg" />
+                <div class="footer_menu_text">Jackpot</div>
+              </div>
+            </div>
+          </a>
+          <a href="/screen_20.html">
+            <div class="footer_menu">
+              <div id="gift_shop">
+                <img src="./images/gift-shop.svg" />
+                <div class="footer_menu_text">gift shop</div>
+              </div>
+            </div>
+          </a>
+          <div class="btn_mission" id="mission">
+            <a href="/screen_16.html">
+              <img src="./images/shop-icon.png" />
+            </a>
+
+          </div>
+          <a href="/screen_25_2.html">
+            <div class="footer_menu">
+              <div id="history">
+                <img src="./images/guide-menu.svg" />
+                <div class="footer_menu_text">Guide</div>
+              </div>
+            </div>
+          </a>
+          <a href="/screen_19.html">
+            <div class="footer_menu">
+              <div id="guide">
+                <img src="./images/noti.svg" />
+                <div class="footer_menu_text">Notification</div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+   
 
       <!-- ---------popup setting---------------------------- -->
       <div class="popup-setting" id="popup-setting">
@@ -144,41 +207,7 @@
           </div>
         </div>
       </div>
-      <!-- -------------footer----------------------- -->
-      <div class="footer" id="footer">
-        <div class="footer_main">
-          <div class="footer_menu">
-            <div id="inbox">
-              <img src="./images/jackpot-icon.svg" />
-              <div class="footer_menu_text">Jackpot</div>
-            </div>
-          </div>
-
-          <div class="footer_menu">
-            <div id="gift_shop">
-              <img src="./images/gift-shop.svg" />
-              <div class="footer_menu_text">gift shop</div>
-            </div>
-          </div>
-          <div class="btn_mission" id="mission">
-            <!-- <div class="btn_mission_text">Mission</div> -->
-            <img src="./images/shop-icon.png" />
-          </div>
-          <div class="footer_menu">
-            <div id="history">
-              <img src="./images/guide-menu.svg" />
-              <div class="footer_menu_text">Guide</div>
-            </div>
-          </div>
-          <div class="footer_menu">
-            <div id="guide">
-              <img src="./images/noti.svg" />
-              <div class="footer_menu_text">Notification</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    
     </div>
   </div>
   <script src="./js/home.js"></script>
