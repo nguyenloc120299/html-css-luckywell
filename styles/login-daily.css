@@ -214,7 +214,7 @@
 }
 .roll-call-text-header {
   position: absolute;
-  bottom: 30px;
+  bottom: -3px;
   left: 50%;
   transform: translate(-50%);
   background: linear-gradient(311.52deg, #fdc16e 29.15%, #ffd862 45.2%, #ffea54 61.27%, #fff34d 70.85%);
@@ -278,7 +278,7 @@
   position: absolute;
   color: #fff;
   left: 50%;
-  bottom: 0;
+  bottom: -35px;
   transform: translateX(-50%);
   font-family: "Quicksand";
   font-style: normal;
@@ -293,22 +293,59 @@
 
   color: #ffffff;
 }
-.active-shine{
+.active-shine {
   position: relative;
 }
-.active-shine::after{
+.active-shine::after {
   content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 100%;
-    transform: skewX(-40deg);
-    animation: slide 2s linear infinite;
-    z-index: 99;
-    filter: blur(15px);
-    opacity: 0.9;
-    background: #ffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  transform: skewX(-40deg);
+  animation: slide 2s linear infinite;
+  z-index: 99;
+  filter: blur(15px);
+  opacity: 0.9;
+  background: #ffff;
+}
+.bar-header {
+  position: absolute;
+  width: 255px;
+  height: 34px;
+  left: 0;
+  bottom: -6px;
+  background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+  border-radius: 20px;
+  transform: rotate(-5.18deg);
+}
+/* .list_rollcall {
+  height: calc(100vh - 200px);
+  overflow: scroll;
+} */
+.btn-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 40px;
+  height: 36px;
+  background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 992px) {
   .game-main {
@@ -332,13 +369,13 @@
   }
 }
 @keyframes slide {
-    0% {
-        top: 0;
-        left: 0;
-    }
+  0% {
+    top: 0;
+    left: 0;
+  }
 
-    100% {
-        top: 100%;
-        left: 100%;
-    }
+  100% {
+    top: 100%;
+    left: 100%;
+  }
 }

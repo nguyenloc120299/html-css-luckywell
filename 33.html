@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/popup-buy_turn.css" rel="stylesheet">
+    <link href="./styles/home.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@200;300;500;600;700;900&family=Montserrat:wght@200;400;500;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="wallpaper-below">
+            <img src="./images/wallpaper-below.png" />
+        </div>
+        <div class="wallpaper-below-coin">
+            <img src="./images/bg.png" />
+        </div>
+        <div class="wrap-page">
+            <!-- --------------------header------------------>
+            <div class="header">
+                <div class="header_main">
+                    <div class="coin">
+                        <div class="box-coin">
+                            <div class="amount">300</div>
+                        </div>
+                        <div class="coin-1">
+                            <img src="./images/coin-1.svg" />
+                        </div>
+                        <div class="coin-2">
+                            <img src="./images/coin-2.svg" />
+                        </div>
+                    </div>
+                    <div class="header_info">
+                        <div class="header_info_avatar"></div>
+                        <img src="./images/signout.svg" class="header_info_icon" />
+                        <img src="./images/seting.svg" class="header_info_icon" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------event-------------------->
+
+            <div class="lucky-ticket-event">
+                <div style="position: relative;">
+                    <a href="/screen_23_new.html">
+                        <div class="btn-lucket">
+                            Lucky ticket
+                        </div>
+                        <div style="position: absolute;z-index: -1;top: -40px; left: 0;">
+                            <img src="./images/tickets.png" />
+                        </div>
+                </div>
+                </a>
+                <a href="/screen_11.html">
+                    <div class="btn-mission">
+                        <img src="./images/btn-mission-ng.png" />
+                        <div class="text-btn-mission">
+                            Mission
+                        </div>
+                    </div>
+                </a>
+                <a href="/rollcall.html">
+                    <div class="btn-rollcall">
+                        ROLL CALL
+                    </div>
+                </a>
+            </div>
+
+            <!-- -------------------luckywel----------------------- -->
+            <div class="game-main">
+                <div class="lucky-well">
+                    <div class="lucky-well-buy-turn">
+                    </div>
+                    <img src="./images/Lucky-Draw-Originals.gif" class="spin-bg" />
+                    <div class="lucky-well-spin" id="spin-lucky-well">
+                        <img src="./images/Spin.png" />
+                    </div>
+                    <div class="spine-bot">
+                        <img src="./images/Bot.png" />
+                    </div>
+                    <div class="spine-btn" id="spineBtn">
+                        <img src="./images/spine.png" id="img_spin" />
+                    </div>
+                    <div class="number-lucky-well">
+                        <img src="./images/numLuckywell.png" />
+                        <span>02</span>
+                    </div>
+                    <div class="arow_lucky_well">
+                        <img src="./images/arow.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------------jackpot---------------- -->
+            <div class="jackpot-event">
+                <div style="position: relative;">
+                    <div class="jackpot-box">
+                    </div>
+                    <div class="car-animation">
+                        <div class="text-jackpot">
+                            Jackpot
+                        </div>
+                        <div class="jackpot-box-time">
+                            <div>
+                                <img src="./images/car.png" style="transform: scale(.75);" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-timeleft">
+                        2D 10h 20m
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- --------------popup warning------------------- -->
+        <div class="popup-warning" id="warning">
+            <div class="popup-buy_turn-content">
+                <div class="popup-buy_turn-content-main" style="max-width: 300px;">
+                    <div class="flex justify-center">
+                        <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 38.4824H44L22 0.482422L0 38.4824ZM24 32.4824H20V28.4824H24V32.4824ZM24 24.4824H20V16.4824H24V24.4824Z"
+                                fill="#D53636" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-center">
+                        <span class="text-warning ">Warning</span>
+                    </div>
+                    <div class="content-text" style="text-align: center;line-height: 18px;">Network connection error.
+                        Please check <br>
+                        your connection and try again!</div>
+                    <div class="flex w-full justify-between">
+                        <div class="btn-ok">
+                            <div>OK</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/home.js"></script>
+</body>
+
+</html>

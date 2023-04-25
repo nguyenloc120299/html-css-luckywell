@@ -129,10 +129,10 @@ backdrop-filter:unset;
     position: relative;
 }
 .effect-title {
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 12%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -9%);
     mix-blend-mode: screen;
     width: 100%;
     z-index: 99;
@@ -157,7 +157,6 @@ backdrop-filter:unset;
 .main-slot-machine {
     width: 100%;
     height: 100vh;
-    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,8 +275,8 @@ backdrop-filter:unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 49px;
+    font-size: 40px;
+    line-height: 35px;
     text-transform: capitalize;
     background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
     -webkit-background-clip: text;
@@ -288,8 +287,8 @@ backdrop-filter:unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 49px;
+    font-size: 38px;
+    line-height: 35px;
     text-transform: capitalize;
     background: linear-gradient(180deg, #d8d8d8 0%, #ffffff 100%);
     -webkit-background-clip: text;
@@ -300,8 +299,8 @@ backdrop-filter:unset;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 49px;
+    font-size: 40px;
+    line-height: 35px;
     background: linear-gradient(180deg, #fbdbbc 0%, #b86819 100%);
     text-transform: capitalize;
     -webkit-background-clip: text;
@@ -582,14 +581,17 @@ backdrop-filter:unset;
     position: relative;
     overflow: hidden;
 }
-.btn-prize::before{
+.btn-prize::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 10px;
+    width: 15px;
     height: 100%;
-
+    background: #ffff;
+    filter: blur(10px);
+    transform: skew(-45deg);
+    animation: shine-btn-prize 2s linear infinite;
 }
 .btn-prize span {
     font-family: "Quicksand";
@@ -980,8 +982,8 @@ backdrop-filter:unset;
     background: rgb(224, 212, 227);
 }
 .light-animation {
-    position: absolute;
-    top: 42%;
+    position: fixed;
+    top: 30%;
     left: 64%;
     transform: translate(-50%, -50%) scale(0.8);
     width: 100%;
@@ -989,8 +991,8 @@ backdrop-filter:unset;
 }
 .light-animation img {
     animation: cicle 7s linear infinite;
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
 }
 .animation-package-1,
 .animation-package-2 {
@@ -999,31 +1001,35 @@ backdrop-filter:unset;
 .animation-package-1::after {
     content: "";
     position: absolute;
-    bottom: 16px;
-    left: 50%;
-    width: 55px;
+    bottom: 18px;
+    left: 49%;
+    width: 50%;
     transform: translateX(-50%);
-    height: 10px;
-    background: #e7e73e;
-    filter: blur(5px);
+    height: 25px;
+    background: #fefe46;
+    filter: blur(15px);
     opacity: 0;
     animation: package-animation 2.5s ease-in-out infinite;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 .animation-package-2::after {
     content: "";
     position: absolute;
-    bottom: 16px;
-    left: 50%;
-    width: 55px;
+    bottom: 18px;
+    left: 49%;
+    width: 52%;
     transform: translateX(-50%);
-    height: 10px;
-    background: #18850e;
-    filter: blur(5px);
+    height: 25px;
+    background: #32de22;
+    filter: blur(15px);
     opacity: 0;
     animation: package-animation 2.5s ease-in-out infinite;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 .animation-package-2.broze-color::after {
-    background: rgb(255, 85, 62);
+    background: rgb(237, 103, 86);
 }
 .light-4 {
     position: absolute;
@@ -1041,19 +1047,28 @@ backdrop-filter:unset;
     left: 31px;
     z-index: -1;
 }
-.light-test {
-    top: 70px !important;
-}
+
 .light-test img {
     width: 100%;
     height: 100%;
 }
-.row-list-live{
+.row-list-live {
     height: 450px;
     overflow: scroll;
 }
-.row-list-live::-webkit-scrollbar{
+.row-list-live::-webkit-scrollbar {
     display: none;
+}
+.live-icon {
+    animation: live-icon 1s ease-in-out infinite;
+}
+@keyframes live-icon {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 @keyframes package-animation {
     0% {
@@ -1094,32 +1109,25 @@ backdrop-filter:unset;
     }
 }
 @media (max-height: 900px) {
-    .jackport_package_frame {
-        transform: scale(0.95);
-    }
     .main-slot-machine {
-        margin-top: 50px;
-        transform: scale(0.95);
+        transform: scale(0.9);
     }
     .jackport_package {
         margin-top: -21px;
     }
     .list-btn-jackport {
         margin-top: -5px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 }
 
 @media (max-height: 768px) {
-    .effect-title {
-        top: 25px;
-    }
-
     .main-slot-machine {
-        transform: scale(0.82);
+        transform: scale(0.8);
+        padding-top: 25px;
     }
     .jackport_package_frame {
-        transform: scale(0.9);
+        transform: scale(0.87);
         margin-top: -35px;
         margin-bottom: 20px;
     }
@@ -1131,44 +1139,27 @@ backdrop-filter:unset;
     }
 }
 @media (max-height: 700px) {
-    .effect-title {
-        top: 16px;
+    .jackport_package_frame {
+        transform: scale(0.87);
     }
     .jackport_package_frame {
-        transform: scale(0.85);
-    }
-    .jackport_package_frame {
-        margin-top: -35px;
-        margin-bottom: 2px;
-    }
-}
-@media (min-height: 800px) {
-    .light-4,
-    .light-5 {
-        top: 92px;
+        margin-bottom: 10px;
     }
 }
 
 @keyframes progress-forward {
-    /* 0% {
-        width: 0%;
-    }
-    25% {
-        width: 50%;
-    }
-    50% {
-        width: 75%;
-    }
-    75% {
-        width: 85%;
-    }
-    100% {
-        width: 100%;
-    } */
     from {
         width: 0%;
     }
     to {
         width: 100%;
+    }
+}
+@keyframes shine-btn-prize {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
     }
 }

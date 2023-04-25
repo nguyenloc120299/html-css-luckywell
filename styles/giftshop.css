@@ -491,13 +491,17 @@ li {
 }
 .text-title-giftshop {
     position: absolute;
-    bottom: 8px;
+    bottom: 5px;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+}
+.text-title-giftshop img {
+    transform: scale(0.9);
 }
 .text-title-giftshop span {
     font-family: "Quicksand";
@@ -679,7 +683,14 @@ li {
     opacity: 0.6;
     background: #e7e7e7;
 }
-
+.bg-title-effect-giftshop {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    height: 50px;
+}
 @media (max-width: 690px) {
     .game-main {
         width: 100%;
@@ -698,7 +709,7 @@ li {
 @media (max-height: 768px) {
     .img-bg-gift-shop {
         height: 130px;
-        margin-bottom: 4px;
+        margin-bottom: 7px;
     }
     .text-title-giftshop {
         font-size: 30px;

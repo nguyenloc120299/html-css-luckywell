@@ -550,10 +550,11 @@ backdrop-filter:unset;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .lucky-ticket-event {
-    position: absolute;
+    position: fixed;
     top: 112px;
     left: 5px;
     z-index: 10;
+    transform: scale(0.95);
 }
 .lucky-ticket-event .btn-lucket {
     display: flex;
@@ -649,11 +650,11 @@ backdrop-filter:unset;
 }
 
 .jackpot-event {
-    position: absolute;
+    position: fixed;
     left: -20px;
-    bottom: 240px;
     width: 200px;
     transform: scale(0.8);
+    bottom: 146px;
 }
 .jackpot-box {
     position: absolute;
@@ -668,7 +669,7 @@ backdrop-filter:unset;
 }
 .jackpot-event .text-jackpot {
     position: absolute;
-    left: 40%;
+    left: 45%;
     transform: translateX(-50%);
     top: 12.99%;
     bottom: 40.26%;
@@ -688,8 +689,21 @@ backdrop-filter:unset;
     position: absolute;
     width: 164.01px;
     height: 61.55px;
-    top: 4.45px;
+    top: -4.5px;
 }
+.jackpot-box-time div {
+    position: relative;
+}
+.jackpot-box-time div::after {
+    content: "";
+    position: absolute;
+    background: url("../images/smoke.png");
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    animation: smoke-car 1s ease-in infinite;
+}
+
 .text-timeleft {
     font-family: "Quicksand";
     font-style: normal;
@@ -730,6 +744,14 @@ backdrop-filter:unset;
     filter: blur(10px);
     opacity: 0.75;
     background: #f7a5f6;
+}
+@keyframes smoke-car {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @keyframes slide-up {
     0% {
@@ -779,10 +801,10 @@ backdrop-filter:unset;
 }
 @media (max-width: 992px) {
     .game-main {
-        transform: scale(1);
+        transform: scale(0.95);
     }
     .lucky-well {
-        transform: scale(1);
+        transform: scale(0.95);
     }
 }
 @media (max-width: 430px) {
