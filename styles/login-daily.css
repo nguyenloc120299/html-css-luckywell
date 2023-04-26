@@ -224,6 +224,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .roll-call-text-header span {
   font-family: "Racing Sans One";
@@ -319,6 +320,7 @@
   background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
   border-radius: 20px;
   transform: rotate(-5.18deg);
+  z-index: 1;
 }
 .bar-header-1 {
   position: absolute;
