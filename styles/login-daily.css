@@ -320,8 +320,17 @@
   border-radius: 20px;
   transform: rotate(-5.18deg);
 }
+.bar-header-1 {
+  position: absolute;
+  width: 270px;
+  height: 34px;
+  left: 0;
+  bottom: -6px;
+  background: #200249;
+  border-radius: 20px;
+  transform: rotate(5.18deg);
+}
 .list_rollcall {
- 
   overflow: scroll;
 }
 .btn-login {
@@ -368,8 +377,8 @@
     transform: scale(0.9);
   }
 }
-@media(max-height:650px){
-  .list_rollcall{
+@media (max-height: 650px) {
+  .list_rollcall {
     height: calc(100vh - 150px);
     overflow-y: scroll;
   }
