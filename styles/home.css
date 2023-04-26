@@ -654,7 +654,7 @@ backdrop-filter:unset;
     left: -20px;
     width: 200px;
     transform: scale(0.8);
-    bottom: 146px;
+    bottom: 150px;
 }
 .jackpot-box {
     position: absolute;
@@ -747,6 +747,32 @@ backdrop-filter:unset;
     filter: blur(10px);
     opacity: 0.75;
     background: #f7a5f6;
+}
+.shine-spin-animation{
+    position: relative;
+    overflow: hidden;
+}
+.shine-spin-animation::before{
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 45%;    
+    width: 50px;
+    height: 40px;
+    background: #fff;
+    transform: skew(-45deg) translateY(-50%);
+    filter: blur(12px);
+    animation:  shine-spin 3s linear infinite;
+}
+@keyframes shine-spin{
+    from{
+        left: 10%;
+        opacity: 1;
+    }
+    to{
+        left: 60%;
+        opacity: .2;
+    }
 }
 @keyframes smoke-car {
     from {

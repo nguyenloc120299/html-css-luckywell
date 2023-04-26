@@ -320,10 +320,10 @@
   border-radius: 20px;
   transform: rotate(-5.18deg);
 }
-/* .list_rollcall {
-  height: calc(100vh - 200px);
+.list_rollcall {
+ 
   overflow: scroll;
-} */
+}
 .btn-login {
   display: flex;
   flex-direction: row;
@@ -366,6 +366,12 @@
 @media (max-height: 768px) {
   .popup-scrollcall-content {
     transform: scale(0.9);
+  }
+}
+@media(max-height:650px){
+  .list_rollcall{
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
   }
 }
 @keyframes slide {
