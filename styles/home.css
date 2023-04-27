@@ -31,7 +31,7 @@
     width: 100%;
     background: url("../images/rectangle1.png");
     background-repeat: no-repeat;
-    background-position: center -6px;
+    background-position: center -22px;
     isolation: isolate;
     background-size: 100%;
     background-blend-mode: overlay;
@@ -193,6 +193,7 @@ backdrop-filter:unset;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 .footer_menu {
     display: flex;
     flex-direction: column;
@@ -494,7 +495,7 @@ backdrop-filter:unset;
     gap: 4px;
     width: 46px;
     height: 23px;
-    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+   background: #200249;
     border-radius: 0px 12px 12px 0px;
     font-family: "Quicksand";
     font-style: normal;
@@ -502,6 +503,12 @@ backdrop-filter:unset;
     font-size: 12px;
     line-height: 15px;
     color: #ffffff;
+}
+.lang-img img{
+    opacity: .2;
+}
+.active-sound{
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%); 
 }
 .text-lucky-ticket {
     position: absolute;
