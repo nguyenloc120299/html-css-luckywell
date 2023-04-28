@@ -495,7 +495,7 @@ backdrop-filter:unset;
     gap: 4px;
     width: 46px;
     height: 23px;
-   background: #200249;
+    background: #200249;
     border-radius: 0px 12px 12px 0px;
     font-family: "Quicksand";
     font-style: normal;
@@ -504,11 +504,11 @@ backdrop-filter:unset;
     line-height: 15px;
     color: #ffffff;
 }
-.lang-img img{
-    opacity: .2;
+.lang-img img {
+    opacity: 0.2;
 }
-.active-sound{
-    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%); 
+.active-sound {
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
 }
 .text-lucky-ticket {
     position: absolute;
@@ -755,30 +755,155 @@ backdrop-filter:unset;
     opacity: 0.75;
     background: #f7a5f6;
 }
-.shine-spin-animation{
+.shine-spin-animation {
     position: relative;
     overflow: hidden;
 }
-.shine-spin-animation::before{
+.shine-spin-animation::before {
     content: "";
     position: absolute;
     left: 10%;
-    top: 45%;    
+    top: 45%;
     width: 50px;
     height: 40px;
     background: #fff;
     transform: skew(-45deg) translateY(-50%);
     filter: blur(12px);
-    animation:  shine-spin 3s linear infinite;
+    animation: shine-spin 3s linear infinite;
 }
-@keyframes shine-spin{
-    from{
+.spin-option-1 {
+    position: absolute;
+    left: -39.25%;
+    right: 65.61%;
+    top: 68.01%;
+    bottom: 18.85%;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #200249;
+    transform: rotate(152.5deg);
+}
+.spin-option-2 {
+    position: absolute;
+    left: 26.4%;
+    right: 49.95%;
+    top: 77.06%;
+    bottom: 19.8%;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #200249;
+    transform: rotate(117.5deg);
+}
+.spin-option-3 {
+    position: absolute;
+    left: 39.01%;
+    right: 2.35%;
+    top: 95.33%;
+    bottom: 22.53%;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #200249;
+    transform: rotate(67.5deg);
+}
+.spin-option-4 {
+    position: absolute;
+    left: 72.15%;
+    right: 2.63%;
+    top: 54.95%;
+    bottom: 36.28%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: rotate(22.5deg);
+    height: 50px;
+}
+.spin-option-5 {
+    position: absolute;
+    left: 69.46%;
+    right: 12.53%;
+    top: 32.17%;
+    bottom: 65.82%;
+    transform: rotate(-22.5deg);
+}
+.spin-option-6 {
+    position: absolute;
+    left: 55.31%;
+    right: 26.68%;
+    top: 13.53%;
+    bottom: 68.45%;
+    transform: rotate(-67.5deg);
+}
+.spin-option-7 {
+    position: absolute;
+    left: 36.56%;
+    right: 45.42%;
+    top: 8.87%;
+    bottom: 67.12%;
+    transform: rotate(-113.5deg);
+}
+.spin-option-8 {
+    position: absolute;
+    left: 26.53%;
+    right: 55.45%;
+    top: -50.2%;
+    bottom: 52.19%;
+    transform: rotate(-161.5deg);
+}
+.spin-option-5 span,
+.spin-option-6 span,
+.spin-option-7 span,
+.spin-option-8 span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    /* 4 */
+
+    color: #200249;
+}
+@keyframes shine-spin {
+    from {
         left: 10%;
         opacity: 1;
     }
-    to{
+    to {
         left: 60%;
-        opacity: .2;
+        opacity: 0.2;
     }
 }
 @keyframes smoke-car {
