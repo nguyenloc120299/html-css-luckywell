@@ -9,8 +9,11 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
+}
+.popup-logout:target {
+    visibility: visible;
 }
 .popup-logout-content {
     width: 100%;

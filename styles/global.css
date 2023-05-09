@@ -281,3 +281,10 @@ body {
     height: 100%;
     object-fit: fill;
 }
+.daily-modal {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.daily-modal:target {
+    display: block;
+}

@@ -9,8 +9,11 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
+}
+.popup-mision:target {
+    visibility: visible;
 }
 .popup-mision-content {
     width: 100%;
@@ -240,8 +243,11 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
+}
+.popup-mision-detail:target {
+    visibility: visible;
 }
 .popup-mision-detail-content {
     width: 100%;

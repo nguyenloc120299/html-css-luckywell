@@ -621,6 +621,10 @@ backdrop-filter:unset;
     justify-content: center;
     align-items: center;
     z-index: 99999;
+    visibility: hidden;
+}
+.popup-jackpot-prize:target {
+    visibility: visible;
 }
 .popup-jackpot-prize-content {
     width: 100%;
@@ -730,11 +734,11 @@ backdrop-filter:unset;
     max-width: 400px;
     width: 100%;
     margin: auto;
-    overflow-y:scroll;
+    overflow-y: scroll;
     max-height: 550px;
     padding: 10px 0;
 }
-.reward-box::-webkit-scrollbar{
+.reward-box::-webkit-scrollbar {
     display: none;
 }
 .fiat-reward {
@@ -1068,7 +1072,7 @@ backdrop-filter:unset;
 .live-icon {
     animation: live-icon 1s ease-in-out infinite;
 }
-.jackport_package::-webkit-scrollbar{
+.jackport_package::-webkit-scrollbar {
     display: none;
 }
 @keyframes live-icon {
@@ -1148,7 +1152,7 @@ backdrop-filter:unset;
     }
 }
 @media (max-height: 700px) {
-      .main-slot-machine {
+    .main-slot-machine {
         transform: scale(0.8);
         padding-top: 25px;
     }
@@ -1159,13 +1163,12 @@ backdrop-filter:unset;
         margin-bottom: 10px;
     }
 }
-@media(max-height:650px) {
-    .jackport_package{
+@media (max-height: 650px) {
+    .jackport_package {
         overflow-y: scroll;
         height: 400px;
         padding-top: 40px;
     }
-    
 }
 @keyframes progress-forward {
     from {

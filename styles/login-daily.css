@@ -11,8 +11,11 @@
   z-index: 999;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 1s;
+  visibility: hidden;
 }
-
+.popup-scrollcall:target {
+  visibility: visible;
+}
 .popup-daily-content {
   width: 100%;
   height: 338.96px;
