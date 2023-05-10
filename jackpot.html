@@ -19,6 +19,7 @@
 
 <body>
     <div class="main">
+
         <div class="wrap-page">
             <!-- --------------------header------------------>
             <div class="header">
@@ -53,9 +54,14 @@
                 <div style="position: relative; width: 100%;height: 100%;">
                     <div class="light-animation">
                         <img src="./images/light.png" style="position: absolute;" />
+
                     </div>
                     <div class="effect-title light-test">
-                        <img src="./images/ligh_test.png" class="" />
+                        <div class="img__title">
+                            <img src="./images/jacbot-event-title.svg" />
+                        </div>
+                        <img src="./images/ligh_test.png" class=""
+                            style="position: absolute; top: 0;left: 0; mix-blend-mode: screen;" />
                     </div>
                 </div>
 
@@ -67,9 +73,7 @@
             <div class="flex items-center w-full">
                 <div class="main-slot-machine">
                     <div class="w-full">
-                        <div class="img__title">
-                            <img src="./images/jacbot-event-title.svg" />
-                        </div>
+
                         <div class="list-btn-jackport">
                             <div class="buy_ticket_jackport">
                                 Mascot
@@ -189,43 +193,50 @@
             </div>
 
             <!-- -------------footer----------------------- -->
+
             <div class="footer" id="footer" style="background: url(./images/inbox_footer.png)">
                 <div class="footer_main">
-                    <div class="footer_menu">
-                        <div id="inbox">
-                            <img src="./images/jackpot-icon.svg" />
-                            <div class="footer_menu_text">Jackpot</div>
+                    <a href="jackpot.html">
+                        <div class="footer_menu">
+                            <div id="inbox">
+                                <img src="./images/jackpot-icon.svg" />
+                                <div class="footer_menu_text">Jackpot</div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="footer_menu">
-                        <div id="gift_shop">
-                            <img src="./images/gift-shop.svg" />
-                            <div class="footer_menu_text">gift shop</div>
+                    </a>
+                    <a href="giftshop.html">
+                        <div class="footer_menu">
+                            <div id="gift_shop">
+                                <img src="./images/gift-shop.svg" />
+                                <div class="footer_menu_text">gift shop</div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="btn_mission" id="mission">
-                        <a href="/home.html" class="">
+                        <a href="home.html">
                             <img src="./images/shop-icon.png" />
                         </a>
 
                     </div>
-                    <div class="footer_menu">
-                        <div id="history">
-                            <img src="./images/guide-menu.svg" />
-                            <div class="footer_menu_text">Guide</div>
+                    <a href="guide.html">
+                        <div class="footer_menu">
+                            <div id="history">
+                                <img src="./images/guide-menu.svg" />
+                                <div class="footer_menu_text">Guide</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="footer_menu">
-                        <div id="guide">
-                            <img src="./images/noti.svg" />
-                            <div class="footer_menu_text">Notification</div>
+                    </a>
+                    <a href="history.html#point">
+                        <div class="footer_menu">
+                            <div id="guide">
+                                <img src="./images/history.svg" />
+                                <div class="footer_menu_text">History</div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
             </div>
-
             <!-- ---------------popup jackpot prize------------------ -->
             <div class="popup-jackpot-prize" id="popup-jackpot-prize-gold">
                 <div class="popup-jackpot-prize-content">
@@ -663,7 +674,7 @@
             </div>
 
 
-             <!-- -------popup bigwin---- -->
+            <!-- -------popup bigwin---- -->
 
             <div class="popup-bigwin" id="popup-bigwin">
                 <div class="popup-bigwin-content">

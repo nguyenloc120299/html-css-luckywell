@@ -197,6 +197,7 @@ backdrop-filter:unset;
     color: #200249;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
+    position: relative;
 }
 .btn-luckyticket {
     flex-direction: row;
@@ -205,7 +206,9 @@ backdrop-filter:unset;
     gap: 10px;
     width: 120px;
     height: 39px;
-    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    background: linear-gradient(55.29deg, #fdc16e 0%, #ffd862 38.5%, #ffea54 77.03%, #fff34d 100%);
+    color: #200249;
+    /* background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%); */
     backdrop-filter: unset;
     -webkit-backdrop-filter: blur(30px);
     font-family: "Quicksand";
@@ -217,7 +220,7 @@ backdrop-filter:unset;
     align-items: center;
     text-align: center;
     text-transform: capitalize;
-    color: #ffffff;
+    position: relative;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
 }
@@ -247,6 +250,7 @@ backdrop-filter:unset;
     order: 0;
     flex-grow: 0;
     text-decoration: none;
+    position: relative;
 }
 .scroll-ticket-lucky {
     display: flex;
@@ -360,6 +364,36 @@ backdrop-filter:unset;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+#spin:target,
+#point:target,
+#prize:target {
+    background: linear-gradient(90deg, #6d68af 0%, #ee4599 51.51%, #f5a2c6 100%);
+    color: #ffffff;
+    position: relative;
+}
+#spin:target.btn-buymascot::before,
+#point:target.btn-luckyticket::before,
+#prize:target.btn-honoring::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 100%;
+    background: #ffff;
+    transform: skew(-45deg);
+    left: 0;
+    top: 0;
+    filter: blur(10px);
+    animation: shine-btn 3.5s linear infinite;
+}
+@keyframes shine-btn {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
 @media (max-width: 430px) {
     .total_reward_jackport_detail {
         max-width: 120px;

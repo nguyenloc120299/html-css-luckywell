@@ -1,3 +1,9 @@
+#popup-noti {
+    visibility: hidden;
+}
+#popup-noti:target {
+    visibility: visible;
+}
 .popup-inbox {
     position: fixed;
     left: 0;
@@ -9,7 +15,6 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: visible;
     opacity: 1;
     transition: visibility 0s linear 0.25s, opacity 0.25s;
 }

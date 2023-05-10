@@ -130,7 +130,7 @@ backdrop-filter:unset;
 }
 .effect-title {
     position: fixed;
-    top: 12%;
+    top: 11%;
     left: 50%;
     transform: translate(-50%, -9%);
     mix-blend-mode: screen;
@@ -593,7 +593,7 @@ backdrop-filter:unset;
     transform: skew(-45deg);
     animation: shine-btn-prize 2s linear infinite;
 }
-.btn-prize span {
+.btn-prize a {
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
@@ -1075,6 +1075,15 @@ backdrop-filter:unset;
 .jackport_package::-webkit-scrollbar {
     display: none;
 }
+#jackpot-livestream {
+    visibility: hidden;
+}
+#jackpot-livestream:target {
+    visibility: visible;
+}
+.img__title img {
+    width: 267px;
+}
 @keyframes live-icon {
     from {
         transform: scale(1);
@@ -1124,6 +1133,7 @@ backdrop-filter:unset;
 @media (max-height: 900px) {
     .main-slot-machine {
         transform: scale(0.9);
+        padding-top: 100px;
     }
     .jackport_package {
         margin-top: -21px;
@@ -1137,7 +1147,7 @@ backdrop-filter:unset;
 @media (max-height: 768px) {
     .main-slot-machine {
         transform: scale(0.87);
-        padding-top: 25px;
+        padding-top: 120px;
     }
     .jackport_package_frame {
         transform: scale(0.87);
@@ -1154,7 +1164,7 @@ backdrop-filter:unset;
 @media (max-height: 700px) {
     .main-slot-machine {
         transform: scale(0.8);
-        padding-top: 25px;
+        padding-top: 120px;
     }
     .jackport_package_frame {
         transform: scale(0.85);

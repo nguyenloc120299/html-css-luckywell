@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/login-daily.css" rel="stylesheet">
+    <link href="./styles/popup-won.css" rel="stylesheet">
     <link href="./styles/home.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" style="filter: grayscale(100%);">
         <div class="wallpaper-below">
             <img src="./images/wallpaper-below.png" />
         </div>
@@ -74,7 +74,7 @@
             <div class="game-main">
                 <div class="lucky-well">
 
-                    <img src="./images/Lucky-Draw-Originals.gif" class="spin-bg" />
+                    <img src="./images/spin-bg.png" class="spin-bg" />
                     <div class="lucky-well-spin" id="spin-lucky-well">
                         <div style="position: relative;">
                             <img src="./images/Spin.png" />
@@ -139,19 +139,16 @@
                 <div style="position: relative;">
                     <div class="jackpot-box">
                     </div>
-                    <div class="car-animation">
-                        <div class="text-jackpot">
-                            Jackpot
-                        </div>
-                        <div class="jackpot-box-time">
-                            <div>
-                                <img src="./images/car.png" style="transform: scale(.75);" />
-
+                    <div class="text-jackpot">
+                        Jackpot
+                    </div>
+                    <div class="jackpot-box-time">
+                        <div>
+                            <img src="./images/car.png" style="transform: scale(.75);" />
+                            <div class="text-timeleft">
+                                2D 10h 20m
                             </div>
                         </div>
-                    </div>
-                    <div class="text-timeleft">
-                        2D 10h 20m
                     </div>
                 </div>
             </div>
@@ -173,10 +170,8 @@
                         </div>
                     </div>
                     <div class="btn_mission" id="mission">
-                        <div class="">
-                            <img src="./images/shop-icon.png" />
-                        </div>
-
+                        <!-- <div class="btn_mission_text">Mission</div> -->
+                        <img src="./images/shop-icon.png" />
                     </div>
                     <div class="footer_menu">
                         <div id="history">
@@ -186,8 +181,8 @@
                     </div>
                     <div class="footer_menu">
                         <div id="guide">
-                            <img src="./images/noti.svg" />
-                            <div class="footer_menu_text">Notification</div>
+                            <img src="./images/history.svg" />
+                            <div class="footer_menu_text">History</div>
                         </div>
                     </div>
 
@@ -195,36 +190,33 @@
             </div>
         </div>
     </div>
+    <!-- --------------popup won 10 coin--------------------->
 
-    <!-- --------------popupdaily--------------------->
-    <div class="popup-daily">
-        <div class="popup-daily-content">
-            <div class="popup-daily-content-main">
+    <div class="popup-reward " style="background: rgba(0, 0, 0, 0.7);">
+        <div class="popup-reward-content">
+            <div class="popup-reward-content-main">
                 <a href="./home.html" class="close-popup">
                     <img src="./images/X.svg" />
                 </a>
 
-                <div class="title-corngatulation">
-                    <span>Congratulations!</span>
+                <div class="title_gameover">
+                    <span>game over</span>
                 </div>
-                <div class="line"></div>
-                <div class="content-text">Buying successful</div>
+                <div class="line-gameover"></div>
+
                 <div class="spin-popup">
-                    <img src="./images/Frame.svg" />
-                    <div class="amount-receive-daily">
-                        1
+                    <div class="content-text-gameover">
+                        You have run out of turns,<br />
+                        please buy more turns to continue playing.<br />
+                        Thank you!
                     </div>
                 </div>
-                <div class="content-text">1 Turn</div>
-                <div class="btn-ok">
-                    <div>ok</div>
+                <div class="btn-goodluck">
+                    <div>buy turn</div>
                 </div>
             </div>
-
         </div>
-
-    </div>
-    <script src="./js/home.js"></script>
+        <script src="./js/home.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-.popup-daily,
 .popup-scrollcall {
   position: fixed;
   left: 0;
@@ -13,7 +12,32 @@
   transition: opacity 1s;
   visibility: hidden;
 }
+.popup-daily {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 1s;
+}
 .popup-scrollcall:target {
+  visibility: visible;
+}
+#receive-turn {
+  display: none;
+}
+#receive-turn:target {
+  display: block;
+}
+#buy_turn_success {
+  visibility: hidden;
+}
+#buy_turn_success:target {
   visibility: visible;
 }
 .popup-daily-content {
@@ -174,7 +198,7 @@
 .close-popup:active .popup-daily {
   visibility: hidden;
 }
-.btn-ok {
+.btn-ok-buyturn {
   display: flex;
   flex-direction: row;
   justify-content: center;
