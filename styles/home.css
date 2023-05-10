@@ -409,9 +409,12 @@ backdrop-filter:unset;
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
     z-index: 99999;
+}
+.popup-setting:target{
+    visibility: visible;
 }
 .popup-setting-content {
     position: absolute;

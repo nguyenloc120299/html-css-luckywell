@@ -559,7 +559,7 @@ li {
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
     font-family: "Quicksand", sans-serif;
 }

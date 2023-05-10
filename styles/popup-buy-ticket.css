@@ -1,3 +1,9 @@
+#popup-buyticket{
+    display: none;
+}
+#popup-buyticket:target{
+    display: block;
+}
 .popup-buyticket {
     position: fixed;
     left: 0;
@@ -59,7 +65,7 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
 }
 .popup-fail:target {

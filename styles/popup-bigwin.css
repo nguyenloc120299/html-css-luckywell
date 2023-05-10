@@ -9,6 +9,10 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
+    visibility: hidden;
+}
+.popup-bigwin:target{
+    visibility: visible;
 }
 .popup-bigwin-content {
     width: 100%;
