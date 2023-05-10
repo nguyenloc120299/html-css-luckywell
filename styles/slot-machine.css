@@ -593,7 +593,7 @@ backdrop-filter:unset;
     transform: skew(-45deg);
     animation: shine-btn-prize 2s linear infinite;
 }
-.btn-prize span {
+.btn-prize a {
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
